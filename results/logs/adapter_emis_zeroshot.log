@@ -1,0 +1,38 @@
+2026-09-04 04:10:49.084 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-04 04:10:49.085 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 04:10:49.085 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 780.82it/s]
+2026-09-04 04:10:54.018 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 04:10:54.018 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-04 04:10:57.097 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+adapted=False 48/192
+adapted=False 96/192
+adapted=False 144/192
+adapted=False 192/192
+adapted=True 48/192
+adapted=True 96/192
+adapted=True 144/192
+adapted=True 192/192
+ adapted  conflict generator           metric      mean    ci_low  ci_high   n
+   False     False       ALL acoustic_correct  0.833333  0.729167 0.937500  48
+   False     False       ALL  semantic_follow  0.833333  0.729167 0.937500  48
+   False     False       ALL            other  0.166667  0.062500 0.270833  48
+   False     False       ALL  acoustic_margin  0.000000  0.000000 0.000000  48
+   False     False       ALL          seconds  0.029115  0.027231 0.031882  48
+   False      True       ALL acoustic_correct  0.333333  0.263857 0.407407 144
+   False      True       ALL  semantic_follow  0.472222  0.394444 0.569494 144
+   False      True       ALL            other  0.194444  0.122222 0.261905 144
+   False      True       ALL  acoustic_margin -0.490017 -1.081374 0.034346 144
+   False      True       ALL          seconds  0.028804  0.027882 0.029895 144
+    True     False       ALL acoustic_correct  0.854167  0.770313 0.937500  48
+    True     False       ALL  semantic_follow  0.854167  0.770313 0.937500  48
+    True     False       ALL            other  0.145833  0.062500 0.229687  48
+    True     False       ALL  acoustic_margin  0.000000  0.000000 0.000000  48
+    True     False       ALL          seconds  0.028852  0.027409 0.030677  48
+    True      True       ALL acoustic_correct  0.444444  0.351852 0.537037 144
+    True      True       ALL  semantic_follow  0.444444  0.361111 0.539683 144
+    True      True       ALL            other  0.111111  0.048611 0.180556 144
+    True      True       ALL  acoustic_margin  0.062934 -0.609386 0.780886 144
+    True      True       ALL          seconds  0.029438  0.028405 0.030938 144

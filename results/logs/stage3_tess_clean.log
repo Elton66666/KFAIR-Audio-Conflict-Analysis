@@ -1,0 +1,40 @@
+2026-09-04 05:11:38.091 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-04 05:11:38.091 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 05:11:38.091 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 745.15it/s]
+2026-09-04 05:11:42.624 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 05:11:42.624 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-04 05:11:45.531 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+CACHE 50/200
+CACHE 100/200
+CACHE 150/200
+CACHE 200/200
+baseline 50/200
+baseline 100/200
+baseline 150/200
+baseline 200/200
+/root/autodl-tmp/kfair/code/run_stage3_tess_preservation.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  adapter.load_state_dict(torch.load(OUT/'adapter_sweep_layer25.pt',map_location='cpu')['state_dict']); adapter.eval()
+decision_adapter_layer25 50/200
+decision_adapter_layer25 100/200
+decision_adapter_layer25 150/200
+decision_adapter_layer25 200/200
+/root/autodl-tmp/kfair/code/run_stage3_tess_preservation.py:35: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  adapter.load_state_dict(torch.load(OUT/'adapter_sweep_layer22_full_sequence.pt',map_location='cpu')['state_dict']); adapter.eval()
+full_sequence_adapter_layer22 50/200
+full_sequence_adapter_layer22 100/200
+full_sequence_adapter_layer22 150/200
+full_sequence_adapter_layer22 200/200
+/root/autodl-tmp/kfair/code/run_stage3_tess_preservation.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  l=LoRALinear(original).cuda(); s=torch.load(OUT/'ordinary_lora_layer22_rank8.pt',map_location='cpu')['state_dict']; l.A.load_state_dict(s['A']); l.B.load_state_dict(s['B']); l.eval(); holder['l']=l; attn.q_proj=l
+ordinary_lora_layer22 50/200
+ordinary_lora_layer22 100/200
+ordinary_lora_layer22 150/200
+ordinary_lora_layer22 200/200
+                       method   n  accuracy  acc_neutral  acc_happy  acc_sad  acc_angry
+                     baseline 200     0.670         0.00       1.00     0.98       0.70
+     decision_adapter_layer25 200     0.690         0.02       0.98     1.00       0.76
+full_sequence_adapter_layer22 200     0.725         0.02       1.00     1.00       0.88
+        ordinary_lora_layer22 200     0.705         0.02       0.98     1.00       0.82

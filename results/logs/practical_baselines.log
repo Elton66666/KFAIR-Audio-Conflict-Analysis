@@ -1,0 +1,146 @@
+2026-09-04 04:43:44.217 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-04 04:43:44.217 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 04:43:44.218 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 724.27it/s]
+2026-09-04 04:43:49.307 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 04:43:49.307 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-04 04:43:52.322 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+BASE 288/1152
+BASE 576/1152
+BASE 864/1152
+BASE 1152/1152
+GATE 0.0 {'ser': 0.23958333333333334, 'aligned_ser': 0.21875, 'conflict_acoustic_follow': 0.2604166666666667, 'conflict_semantic_follow': 0.21875, 'conflict_margin': -0.022135416666666668}
+GATE 0.25 {'ser': 0.4322916666666667, 'aligned_ser': 0.4375, 'conflict_acoustic_follow': 0.4270833333333333, 'conflict_semantic_follow': 0.1875, 'conflict_margin': 0.8294270833333334}
+GATE 0.5 {'ser': 0.453125, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.4375, 'conflict_semantic_follow': 0.19791666666666666, 'conflict_margin': 0.953125}
+GATE 0.75 {'ser': 0.4583333333333333, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.4479166666666667, 'conflict_semantic_follow': 0.1875, 'conflict_margin': 1.0143229166666667}
+GATE 1.0 {'ser': 0.46875, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.46875, 'conflict_semantic_follow': 0.1875, 'conflict_margin': 1.0455729166666667}
+GATE 1.25 {'ser': 0.4635416666666667, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.4583333333333333, 'conflict_semantic_follow': 0.19791666666666666, 'conflict_margin': 1.0963541666666667}
+GATE 1.5 {'ser': 0.4635416666666667, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.4583333333333333, 'conflict_semantic_follow': 0.19791666666666666, 'conflict_margin': 1.1139322916666667}
+GATE 2.0 {'ser': 0.4635416666666667, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.4583333333333333, 'conflict_semantic_follow': 0.1875, 'conflict_margin': 1.173828125}
+PROMPT 0 {'ser': 0.46875, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.46875, 'conflict_semantic_follow': 0.1875, 'conflict_margin': 1.0455729166666667}
+PROMPT 1 {'ser': 0.484375, 'aligned_ser': 0.46875, 'conflict_acoustic_follow': 0.5, 'conflict_semantic_follow': 0.17708333333333334, 'conflict_margin': 1.3046875}
+PROMPT 2 {'ser': 0.4583333333333333, 'aligned_ser': 0.4375, 'conflict_acoustic_follow': 0.4791666666666667, 'conflict_semantic_follow': 0.17708333333333334, 'conflict_margin': 1.1536458333333333}
+LORA 1 {'ser': 0.671875, 'aligned_ser': 0.6875, 'conflict_acoustic_follow': 0.65625, 'conflict_semantic_follow': 0.11458333333333333, 'conflict_margin': 3.884765625}
+LORA 2 {'ser': 0.7083333333333334, 'aligned_ser': 0.6875, 'conflict_acoustic_follow': 0.7291666666666666, 'conflict_semantic_follow': 0.08333333333333333, 'conflict_margin': 4.45703125}
+LORA 3 {'ser': 0.6510416666666666, 'aligned_ser': 0.65625, 'conflict_acoustic_follow': 0.6458333333333334, 'conflict_semantic_follow': 0.11458333333333333, 'conflict_margin': 4.890625}
+LORA 4 {'ser': 0.5885416666666666, 'aligned_ser': 0.59375, 'conflict_acoustic_follow': 0.5833333333333334, 'conflict_semantic_follow': 0.14583333333333334, 'conflict_margin': 4.777994791666667}
+{
+  "baseline": {
+    "ser": 0.4114583333333333,
+    "aligned_ser": 0.4375,
+    "conflict_acoustic_follow": 0.3854166666666667,
+    "conflict_semantic_follow": 0.19791666666666666,
+    "conflict_margin": 0.900390625
+  },
+  "calibration": {
+    "l2": 0.0,
+    "temperature": 2.8162147998809814,
+    "validation": {
+      "ser": 0.46875,
+      "aligned_ser": 0.5,
+      "conflict_acoustic_follow": 0.4375,
+      "conflict_semantic_follow": 0.19791666666666666,
+      "conflict_margin": 0.3712688684463501
+    },
+    "test": {
+      "ser": 0.40625,
+      "aligned_ser": 0.40625,
+      "conflict_acoustic_follow": 0.40625,
+      "conflict_semantic_follow": 0.17708333333333334,
+      "conflict_margin": 0.3197165826956431
+    }
+  },
+  "gate": {
+    "scale": 1.0,
+    "validation": {
+      "ser": 0.46875,
+      "aligned_ser": 0.46875,
+      "conflict_acoustic_follow": 0.46875,
+      "conflict_semantic_follow": 0.1875,
+      "conflict_margin": 1.0455729166666667
+    },
+    "test": {
+      "ser": 0.4114583333333333,
+      "aligned_ser": 0.4375,
+      "conflict_acoustic_follow": 0.3854166666666667,
+      "conflict_semantic_follow": 0.19791666666666666,
+      "conflict_margin": 0.900390625
+    }
+  },
+  "prompt": {
+    "prompt_index": 1,
+    "prompt": "Ignore the literal meaning of the words. Judge only vocal tone, pitch, rhythm, intensity, and prosody. Choose exactly one: A=neutral, B=happy, C=sad, D=angry. Reply with only A, B, C, or D.",
+    "validation": {
+      "ser": 0.484375,
+      "aligned_ser": 0.46875,
+      "conflict_acoustic_follow": 0.5,
+      "conflict_semantic_follow": 0.17708333333333334,
+      "conflict_margin": 1.3046875
+    },
+    "test": {
+      "ser": 0.4739583333333333,
+      "aligned_ser": 0.46875,
+      "conflict_acoustic_follow": 0.4791666666666667,
+      "conflict_semantic_follow": 0.1875,
+      "conflict_margin": 1.3033854166666667
+    }
+  },
+  "lora": {
+    "parameters": 57344,
+    "best_epoch": 2,
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 0.5780246007318084,
+        "ser": 0.671875,
+        "aligned_ser": 0.6875,
+        "conflict_acoustic_follow": 0.65625,
+        "conflict_semantic_follow": 0.11458333333333333,
+        "conflict_margin": 3.884765625
+      },
+      {
+        "epoch": 2,
+        "loss": 0.3167948370188422,
+        "ser": 0.7083333333333334,
+        "aligned_ser": 0.6875,
+        "conflict_acoustic_follow": 0.7291666666666666,
+        "conflict_semantic_follow": 0.08333333333333333,
+        "conflict_margin": 4.45703125
+      },
+      {
+        "epoch": 3,
+        "loss": 0.1877291878048221,
+        "ser": 0.6510416666666666,
+        "aligned_ser": 0.65625,
+        "conflict_acoustic_follow": 0.6458333333333334,
+        "conflict_semantic_follow": 0.11458333333333333,
+        "conflict_margin": 4.890625
+      },
+      {
+        "epoch": 4,
+        "loss": 0.08534544208886914,
+        "ser": 0.5885416666666666,
+        "aligned_ser": 0.59375,
+        "conflict_acoustic_follow": 0.5833333333333334,
+        "conflict_semantic_follow": 0.14583333333333334,
+        "conflict_margin": 4.777994791666667
+      }
+    ],
+    "validation": {
+      "ser": 0.7083333333333334,
+      "aligned_ser": 0.6875,
+      "conflict_acoustic_follow": 0.7291666666666666,
+      "conflict_semantic_follow": 0.08333333333333333,
+      "conflict_margin": 4.45703125
+    },
+    "test": {
+      "ser": 0.8802083333333334,
+      "aligned_ser": 0.90625,
+      "conflict_acoustic_follow": 0.8541666666666666,
+      "conflict_semantic_follow": 0.03125,
+      "conflict_margin": 6.18359375
+    }
+  }
+}

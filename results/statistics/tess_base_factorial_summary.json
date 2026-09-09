@@ -1,0 +1,9 @@
+{
+  "n_pairs": 2400,
+  "ME_C_mean": -0.09872070687512556,
+  "ME_D_mean": 0.03741862359146277,
+  "interaction_mean": -0.14179036214947702,
+  "acoustic_follow_rate": 0.23958333333333334,
+  "discrete_follow_rate": 0.2547916666666667,
+  "other_rate": 0.505625
+}

@@ -1,0 +1,10 @@
+{
+  "n_pairs": 288,
+  "n_cells": 1152,
+  "ME_C_mean": -0.02419704654150539,
+  "ME_D_mean": -0.008463533802164925,
+  "interaction_mean": -0.04405381861660215,
+  "acoustic_follow_rate": 0.2673611111111111,
+  "discrete_follow_rate": 0.23958333333333334,
+  "other_prediction_rate": 0.4930555555555556
+}

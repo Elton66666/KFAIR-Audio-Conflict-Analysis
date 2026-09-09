@@ -1,0 +1,30 @@
+diff --git a/.gitmodules b/.gitmodules
+index 4831b09..ec00976 100644
+--- a/.gitmodules
++++ b/.gitmodules
+@@ -1,3 +1,3 @@
+ [submodule "kimia_infer/models/tokenizer/glm4"]
+ 	path = kimia_infer/models/tokenizer/glm4
+-	url = https://github.com/THUDM/GLM-4-Voice.git
++	url = https://ghproxy.net/https://github.com/THUDM/GLM-4-Voice.git
+diff --git a/kimia_infer/api/kimia.py b/kimia_infer/api/kimia.py
+index 62db7c0..7c071de 100644
+--- a/kimia_infer/api/kimia.py
++++ b/kimia_infer/api/kimia.py
+@@ -6,7 +6,6 @@ from loguru import logger
+ from huggingface_hub import cached_assets_path
+ from transformers import AutoModelForCausalLM
+ 
+-from kimia_infer.models.detokenizer import get_audio_detokenizer
+ from .prompt_manager import KimiAPromptManager
+ from kimia_infer.utils.sampler import KimiASampler
+ from huggingface_hub import snapshot_download
+@@ -39,6 +38,8 @@ class KimiAudio(object):
+ 
+         if load_detokenizer:
+             logger.info(f"Loading detokenizer")
++            from kimia_infer.models.detokenizer import get_audio_detokenizer
++
+             # need to compile extension moudules for the first time, it may take several minutes.
+             self.detokenizer = get_audio_detokenizer(cache_path)
+         else:

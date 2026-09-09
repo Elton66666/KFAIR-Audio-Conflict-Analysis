@@ -1,0 +1,5 @@
+method,n,micro_wer,mean_wer,exact_match,mean_seconds
+baseline,32,0.0,0.0,1.0,0.27826305478811264
+decision_adapter_layer25,32,0.0,0.0,1.0,0.2585897669196129
+full_sequence_adapter_layer22,32,0.0,0.0,1.0,0.2561715543270111
+ordinary_lora_layer22,32,0.0,0.0,1.0,0.26268962770700455

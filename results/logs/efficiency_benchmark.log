@@ -1,0 +1,97 @@
+2026-09-04 04:50:22.153 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-04 04:50:22.153 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 04:50:22.153 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 751.41it/s]
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55792b6a80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: f9f77dce-ba65-4d76-a6c1-dce283ae60b5)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae18470>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: c83ee915-c794-43d8-ad36-5615699bec36)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55766a3470>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 5d4adbdc-0b6b-4ee1-b461-bcec7063e67d)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55766a3320>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 55172749-e5d9-4c9d-9355-91d7ae2be825)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae0ebd0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 99fc27ac-262b-460f-a6e3-3a09624733a0)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae0e9c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: e7ec4495-9bd1-48ab-a972-6e56c8d87b2f)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5576c995b0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 40e29f09-bb89-4e57-8bca-77f35248740a)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55766a2750>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 0299d8c7-5861-4185-a880-6ebb5b393d14)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae18050>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: d6bbbe9d-e25f-435e-8c5b-71fde2fa286e)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae18830>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 80bafa98-7804-4b88-ad21-992957b0ee90)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae197f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: bf1c8cee-361f-4b76-a21e-8f1435fac2e4)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae0dfd0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 48de50e9-9b6b-4801-8843-e1d44e09012f)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55766a2de0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 14e82b15-4c05-4b8a-bc86-89b7cff3939d)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae19a60>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 95d2da18-4472-4943-a4c2-997dc25aecff)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55768129f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: e5fc533e-5d73-446d-bd03-3423332a699d)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f2690>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 988e3ee1-1c61-4258-bc11-226835d69b97)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f2990>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 15746a95-778b-4ff4-b457-35e0d94fd1e5)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f2c30>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 2412373c-c81a-4357-9827-e57f82d25d79)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/preprocessor_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f33b0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 26229b0e-b626-43a0-a9ed-68dcfd48c015)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f36b0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: c2f7ab3c-ab4b-41b9-b67e-cfd617ceb590)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f3a10>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: d5b566be-b5ae-44c0-a5c1-17ee92b60dc9)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f55582f3d70>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 7a7667a2-a26b-40e6-bdff-ef02f077e918)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555ae19a60>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: eb9fd996-b6ce-4fe2-a016-11f1fbff50c0)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f555adf31d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 50265e05-4529-4324-a420-7e91df1097ef)')' thrown while requesting HEAD https://huggingface.co/THUDM/glm-4-voice-tokenizer/resolve/main/processor_config.json
+2026-09-04 04:55:59.283 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 04:55:59.283 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-04 04:56:02.510 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+/root/autodl-tmp/kfair/code/run_efficiency_benchmark.py:56: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dec=torch.load(OUT/'adapter_sweep_layer25.pt',map_location='cpu')['state_dict']; adapter=Adapter(model.alm.config.hidden_size).cuda(); adapter.load_state_dict(state_dec)
+/root/autodl-tmp/kfair/code/run_efficiency_benchmark.py:63: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_full=torch.load(OUT/'adapter_sweep_layer22_full_sequence.pt',map_location='cpu')['state_dict']; adapter.load_state_dict(state_full)
+/root/autodl-tmp/kfair/code/run_efficiency_benchmark.py:69: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  attn=model.alm.model.layers[22].self_attn; original=attn.q_proj; lora=LoRALinear(original).cuda(); st=torch.load(OUT/'ordinary_lora_layer22_rank8.pt',map_location='cpu')['state_dict']; lora.A.load_state_dict(st['A']); lora.B.load_state_dict(st['B'])
+[
+  {
+    "method": "baseline",
+    "n": 24,
+    "mean_ms": 25.75828895593683,
+    "median_ms": 25.763309560716152,
+    "p95_ms": 26.36081539094448,
+    "peak_allocated_gb": 21.041518688201904,
+    "peak_reserved_gb": 22.552734375
+  },
+  {
+    "method": "decision_adapter_layer25_rank8",
+    "n": 24,
+    "mean_ms": 25.763496678943437,
+    "median_ms": 25.68746544420719,
+    "p95_ms": 26.00412257015705,
+    "peak_allocated_gb": 21.04173231124878,
+    "peak_reserved_gb": 22.552734375
+  },
+  {
+    "method": "full_sequence_adapter_layer22_rank8",
+    "n": 24,
+    "mean_ms": 26.467924627165,
+    "median_ms": 25.58013889938593,
+    "p95_ms": 25.95461905002594,
+    "peak_allocated_gb": 21.04173231124878,
+    "peak_reserved_gb": 22.552734375
+  },
+  {
+    "method": "ordinary_lora_q_layer22_rank8",
+    "n": 24,
+    "mean_ms": 25.546415786569316,
+    "median_ms": 25.52174497395754,
+    "p95_ms": 26.179535314440727,
+    "peak_allocated_gb": 21.041945934295654,
+    "peak_reserved_gb": 22.552734375
+  }
+]

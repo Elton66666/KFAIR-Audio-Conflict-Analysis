@@ -1,0 +1,47 @@
+diff --git a/modeling_moonshot_kimia.py b/modeling_moonshot_kimia.py
+--- a/modeling_moonshot_kimia.py
++++ b/modeling_moonshot_kimia.py
+@@ -704,16 +704,35 @@ class MoonshotKimiaModel(MoonshotKimiaPreTrainedModel):
+                 whisper_emb = whisper_emb.to(torch.cuda.current_device())
+                 whisper_emb = whisper_emb * is_continuous_mask[:, :, None]
+ 
+-                encoder_input_addwith_discrete_token = (
+-                    audio_emb + whisper_emb
+-                ) * torch.sqrt(
+-                    torch.tensor(
+-                        2.0, dtype=whisper_emb.dtype, device=torch.cuda.current_device()
+-                    )
+-                )
++                kfair_branch_mode = getattr(self, "kfair_branch_mode", "full")
++                kfair_scale = torch.sqrt(
++                    torch.tensor(
++                        2.0, dtype=whisper_emb.dtype, device=torch.cuda.current_device()
++                    )
++                )
++                if kfair_branch_mode == "full":
++                    kfair_fused_audio = (audio_emb + whisper_emb) * kfair_scale
++                elif kfair_branch_mode == "no_continuous":
++                    kfair_fused_audio = audio_emb
++                elif kfair_branch_mode == "no_discrete":
++                    kfair_fused_audio = whisper_emb * kfair_scale
++                elif kfair_branch_mode == "rolled_continuous":
++                    kfair_rolled = whisper_emb.clone()
++                    for kfair_batch_idx in range(kfair_rolled.shape[0]):
++                        kfair_positions = is_continuous_mask[kfair_batch_idx].nonzero(
++                            as_tuple=False
++                        ).squeeze(-1)
++                        if kfair_positions.numel() > 1:
++                            kfair_values = kfair_rolled[kfair_batch_idx, kfair_positions]
++                            kfair_rolled[kfair_batch_idx, kfair_positions] = torch.roll(
++                                kfair_values, shifts=kfair_values.shape[0] // 2, dims=0
++                            )
++                    kfair_fused_audio = (audio_emb + kfair_rolled) * kfair_scale
++                else:
++                    raise ValueError(f"Unknown kfair_branch_mode: {kfair_branch_mode}")
+                 audio_emb = (
+                     audio_emb * (~is_continuous_mask[:, :, None])
+-                    + encoder_input_addwith_discrete_token
++                    + kfair_fused_audio
+                     * is_continuous_mask[:, :, None]
+                 )
+             if text_input_ids is not None and text_input_ids.sum() != 0:

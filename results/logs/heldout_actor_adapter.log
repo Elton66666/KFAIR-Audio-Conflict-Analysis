@@ -1,0 +1,67 @@
+2026-09-03 15:23:19.552 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-03 15:23:19.552 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-03 15:23:19.552 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 721.65it/s]
+2026-09-03 15:23:24.324 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-03 15:23:24.324 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-03 15:23:26.847 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+CACHE 48/192
+CACHE 96/192
+CACHE 144/192
+CACHE 192/192
+BASELINE 192/1152
+BASELINE 384/1152
+BASELINE 576/1152
+BASELINE 768/1152
+BASELINE 960/1152
+BASELINE 1152/1152
+TRAIN epoch=1 96/768 loss=1.2943
+TRAIN epoch=1 192/768 loss=1.1526
+TRAIN epoch=1 288/768 loss=1.1052
+TRAIN epoch=1 384/768 loss=0.9933
+TRAIN epoch=1 480/768 loss=0.9977
+TRAIN epoch=1 576/768 loss=0.9469
+TRAIN epoch=1 672/768 loss=0.9306
+TRAIN epoch=1 768/768 loss=0.8834
+TRAIN epoch=2 96/768 loss=0.5134
+TRAIN epoch=2 192/768 loss=0.5087
+TRAIN epoch=2 288/768 loss=0.4849
+TRAIN epoch=2 384/768 loss=0.4861
+TRAIN epoch=2 480/768 loss=0.4956
+TRAIN epoch=2 576/768 loss=0.4800
+TRAIN epoch=2 672/768 loss=0.4772
+TRAIN epoch=2 768/768 loss=0.5165
+{
+  "layer": 22,
+  "rank": 8,
+  "loss": "L_SER + 0.5 L_pair + 0.2 L_preserve",
+  "history": [
+    0.8834139373724762,
+    0.5164751914405011
+  ],
+  "split": {
+    "train": "actors 1-16",
+    "validation_reserved": "actors 17-20",
+    "test": "actors 21-24"
+  },
+  "test_metrics": {
+    "baseline": {
+      "n": 192,
+      "ser": 0.4114583333333333,
+      "aligned_ser": 0.4375,
+      "conflict_acoustic_follow": 0.3854166666666667,
+      "conflict_semantic_follow": 0.19791666666666666,
+      "conflict_mean_margin": 0.900390625
+    },
+    "adapter": {
+      "n": 192,
+      "ser": 0.84375,
+      "aligned_ser": 0.8125,
+      "conflict_acoustic_follow": 0.875,
+      "conflict_semantic_follow": 0.052083333333333336,
+      "conflict_mean_margin": 3.8938802083333335
+    }
+  }
+}

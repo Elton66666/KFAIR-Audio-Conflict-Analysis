@@ -1,0 +1,5 @@
+method,n,accuracy,acc_neutral,acc_happy,acc_sad,acc_angry
+baseline,200,0.67,0.0,1.0,0.98,0.7
+decision_adapter_layer25,200,0.69,0.02,0.98,1.0,0.76
+full_sequence_adapter_layer22,200,0.725,0.02,1.0,1.0,0.88
+ordinary_lora_layer22,200,0.705,0.02,0.98,1.0,0.82

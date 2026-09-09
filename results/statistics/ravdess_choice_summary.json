@@ -1,0 +1,145 @@
+{
+  "labels": [
+    "neutral",
+    "happy",
+    "sad",
+    "angry"
+  ],
+  "modes": {
+    "full": {
+      "n": 20,
+      "accuracy": 0.3,
+      "macro_f1": 0.25833333333333336,
+      "coverage": 0.75,
+      "mean_seconds": 0.13274500000000003,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "no_continuous": {
+      "n": 20,
+      "accuracy": 0.45,
+      "macro_f1": 0.3817460317460317,
+      "coverage": 1.0,
+      "mean_seconds": 0.10144499999999998,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          2,
+          0
+        ],
+        [
+          3,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          2
+        ]
+      ],
+      "flip_rate_vs_full": 0.65
+    },
+    "no_discrete": {
+      "n": 20,
+      "accuracy": 0.35,
+      "macro_f1": 0.3282828282828283,
+      "coverage": 0.8,
+      "mean_seconds": 0.101145,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "flip_rate_vs_full": 0.15
+    },
+    "rolled_continuous": {
+      "n": 20,
+      "accuracy": 0.55,
+      "macro_f1": 0.5110119047619048,
+      "coverage": 0.95,
+      "mean_seconds": 0.101685,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "flip_rate_vs_full": 0.45
+    }
+  }
+}

@@ -1,0 +1,42 @@
+2026-09-03 15:19:15.019 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-03 15:19:15.019 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-03 15:19:15.019 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 765.14it/s]
+2026-09-03 15:19:19.963 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-03 15:19:19.964 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-03 15:19:22.356 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+full 24/192
+full 48/192
+full 72/192
+full 96/192
+full 120/192
+full 144/192
+full 168/192
+full 192/192
+no_continuous 24/192
+no_continuous 48/192
+no_continuous 72/192
+no_continuous 96/192
+no_continuous 120/192
+no_continuous 144/192
+no_continuous 168/192
+no_continuous 192/192
+no_discrete 24/192
+no_discrete 48/192
+no_discrete 72/192
+no_discrete 96/192
+no_discrete 120/192
+no_discrete 144/192
+no_discrete 168/192
+no_discrete 192/192
+rolled_continuous 24/192
+rolled_continuous 48/192
+rolled_continuous 72/192
+rolled_continuous 96/192
+rolled_continuous 120/192
+rolled_continuous 144/192
+rolled_continuous 168/192
+rolled_continuous 192/192
+DONE

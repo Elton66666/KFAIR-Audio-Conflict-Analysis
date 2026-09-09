@@ -1,0 +1,21 @@
+dataset,condition,comparison,baseline_or_first_accuracy,method_or_second_accuracy,first_wrong_second_right,first_right_second_wrong,mcnemar_exact_p
+TESS-clean,clean,decision_adapter_layer25 vs baseline,0.67,0.69,5,1,0.21875
+TESS-clean,clean,full_sequence_adapter_layer22 vs baseline,0.67,0.725,11,0,0.0009765625
+TESS-clean,clean,ordinary_lora_layer22 vs baseline,0.67,0.705,8,1,0.0390625
+RAVDESS-factorial,clean,decision_adapter_layer25 vs baseline,0.4114583333333333,0.90625,95,0,5.048709793414476e-29
+RAVDESS-factorial,clean,full_sequence_adapter_layer22 vs baseline,0.4114583333333333,0.9166666666666666,102,5,1.3764814213678804e-24
+RAVDESS-factorial,clean,ordinary_lora_layer22 vs baseline,0.4114583333333333,0.8802083333333334,90,0,1.6155871338926322e-27
+RAVDESS-factorial,20,decision_adapter_layer25 vs baseline,0.4166666666666667,0.859375,87,2,1.2944084116747769e-23
+RAVDESS-factorial,20,full_sequence_adapter_layer22 vs baseline,0.4166666666666667,0.859375,90,5,3.093195048615164e-21
+RAVDESS-factorial,20,ordinary_lora_layer22 vs baseline,0.4166666666666667,0.8802083333333334,91,2,8.829183686723235e-25
+RAVDESS-factorial,10,decision_adapter_layer25 vs baseline,0.5833333333333334,0.8177083333333334,51,6,5.676193126635808e-10
+RAVDESS-factorial,10,full_sequence_adapter_layer22 vs baseline,0.5833333333333334,0.828125,59,12,1.3477668518977772e-08
+RAVDESS-factorial,10,ordinary_lora_layer22 vs baseline,0.5833333333333334,0.8697916666666666,55,0,5.551115123125783e-17
+RAVDESS-factorial,clean vs 20dB,baseline,0.4114583333333333,0.4166666666666667,5,4,1.0
+RAVDESS-factorial,clean vs 10dB,baseline,0.4114583333333333,0.5833333333333334,35,2,1.0244548320770264e-08
+RAVDESS-factorial,clean vs 20dB,decision_adapter_layer25,0.90625,0.859375,2,11,0.0224609375
+RAVDESS-factorial,clean vs 10dB,decision_adapter_layer25,0.90625,0.8177083333333334,1,18,7.62939453125e-05
+RAVDESS-factorial,clean vs 20dB,full_sequence_adapter_layer22,0.9166666666666666,0.859375,6,17,0.03468966484069824
+RAVDESS-factorial,clean vs 10dB,full_sequence_adapter_layer22,0.9166666666666666,0.828125,6,23,0.002315700054168701
+RAVDESS-factorial,clean vs 20dB,ordinary_lora_layer22,0.8802083333333334,0.8802083333333334,11,11,1.0
+RAVDESS-factorial,clean vs 10dB,ordinary_lora_layer22,0.8802083333333334,0.8697916666666666,14,16,0.8555355519056321

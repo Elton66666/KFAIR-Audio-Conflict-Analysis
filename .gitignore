@@ -1,0 +1,25 @@
+# Never publish credentials or local auth
+*AutoDL*
+*.pem
+id_rsa*
+.env
+.env.*
+
+# Large external dependencies
+models/
+data/audio/
+data/**/*.wav
+data/**/*.flac
+data/**/*.mp3
+data/**/*.zip
+fastenv2/
+env/
+cache/
+
+# Runtime/cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+

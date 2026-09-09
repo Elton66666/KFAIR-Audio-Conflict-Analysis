@@ -1,0 +1,32 @@
+{
+  "layer": 22,
+  "rank": 8,
+  "loss": "L_SER + 0.5 L_pair + 0.2 L_preserve",
+  "history": [
+    0.8834139373724762,
+    0.5164751914405011
+  ],
+  "split": {
+    "train": "actors 1-16",
+    "validation_reserved": "actors 17-20",
+    "test": "actors 21-24"
+  },
+  "test_metrics": {
+    "baseline": {
+      "n": 192,
+      "ser": 0.4114583333333333,
+      "aligned_ser": 0.4375,
+      "conflict_acoustic_follow": 0.3854166666666667,
+      "conflict_semantic_follow": 0.19791666666666666,
+      "conflict_mean_margin": 0.900390625
+    },
+    "adapter": {
+      "n": 192,
+      "ser": 0.84375,
+      "aligned_ser": 0.8125,
+      "conflict_acoustic_follow": 0.875,
+      "conflict_semantic_follow": 0.052083333333333336,
+      "conflict_mean_margin": 3.8938802083333335
+    }
+  }
+}

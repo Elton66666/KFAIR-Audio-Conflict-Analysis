@@ -1,0 +1,276 @@
+2026-09-04 05:09:54.892 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-04 05:09:54.893 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 05:09:54.893 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 755.26it/s]
+2026-09-04 05:09:59.433 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 05:09:59.433 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-04 05:10:02.504 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   6%|▋         | 3/48 [00:00<00:01, 27.52it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.58it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 29.89it/s]
+baseline 1/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.39it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.85it/s]
+baseline 2/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.86it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.10it/s]
+baseline 3/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.87it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.56it/s]
+baseline 4/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.34it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.32it/s]
+baseline 5/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 36.53it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 33.60it/s]
+baseline 6/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.81it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.14it/s]
+baseline 7/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.25it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.24it/s]
+baseline 8/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.97it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.10it/s]
+baseline 9/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.21it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.11it/s]
+baseline 10/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.52it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.02it/s]
+baseline 11/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.26it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.22it/s]
+baseline 12/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.15it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.26it/s]
+baseline 13/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.26it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.31it/s]
+baseline 14/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.97it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.20it/s]
+baseline 15/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.25it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.32it/s]
+baseline 16/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.18it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.85it/s]
+baseline 17/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.26it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.89it/s]
+baseline 18/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.94it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.92it/s]
+baseline 19/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.53it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.67it/s]
+baseline 20/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.89it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.83it/s]
+baseline 21/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.96it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.75it/s]
+baseline 22/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.15it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.77it/s]
+baseline 23/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.27it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.14it/s]
+baseline 24/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.19it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.86it/s]
+baseline 25/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.28it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.51it/s]
+baseline 26/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.31it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.90it/s]
+baseline 27/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.36it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.97it/s]
+baseline 28/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.39it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.97it/s]
+baseline 29/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.25it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.90it/s]
+baseline 30/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.35it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.96it/s]
+baseline 31/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.70it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.57it/s]
+baseline 32/32 wer=0.000
+/root/autodl-tmp/kfair/code/run_stage3_asr_preservation.py:38: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ck=torch.load(OUT/'adapter_sweep_layer25.pt',map_location='cpu'); adapter.load_state_dict(ck['state_dict']); adapter.eval()
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.07it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.71it/s]
+decision_adapter_layer25 1/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.88it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.00it/s]
+decision_adapter_layer25 2/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.92it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.07it/s]
+decision_adapter_layer25 3/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.84it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.04it/s]
+decision_adapter_layer25 4/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.83it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.04it/s]
+decision_adapter_layer25 5/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.86it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.03it/s]
+decision_adapter_layer25 6/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.95it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.09it/s]
+decision_adapter_layer25 7/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.96it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.08it/s]
+decision_adapter_layer25 8/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.96it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.21it/s]
+decision_adapter_layer25 9/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.22it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.28it/s]
+decision_adapter_layer25 10/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.28it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.59it/s]
+decision_adapter_layer25 11/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.85it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.02it/s]
+decision_adapter_layer25 12/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.88it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.04it/s]
+decision_adapter_layer25 13/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.93it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.07it/s]
+decision_adapter_layer25 14/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.92it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.06it/s]
+decision_adapter_layer25 15/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.96it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.11it/s]
+decision_adapter_layer25 16/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.07it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.71it/s]
+decision_adapter_layer25 17/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.21it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 34.98it/s]
+decision_adapter_layer25 18/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.87it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.64it/s]
+decision_adapter_layer25 19/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.94it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.72it/s]
+decision_adapter_layer25 20/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 40.00it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.92it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.30it/s]
+decision_adapter_layer25 21/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.26it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.51it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.11it/s]
+decision_adapter_layer25 22/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.26it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.21it/s]
+decision_adapter_layer25 23/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.58it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.48it/s]
+decision_adapter_layer25 24/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.67it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.54it/s]
+decision_adapter_layer25 25/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.69it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.59it/s]
+decision_adapter_layer25 26/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.80it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.74it/s]
+decision_adapter_layer25 27/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.29it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.91it/s]
+decision_adapter_layer25 28/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 39.89it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.69it/s]
+decision_adapter_layer25 29/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.83it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.77it/s]
+decision_adapter_layer25 30/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.26it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.93it/s]
+decision_adapter_layer25 31/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.27it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.46it/s]
+decision_adapter_layer25 32/32 wer=0.000
+/root/autodl-tmp/kfair/code/run_stage3_asr_preservation.py:43: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ck=torch.load(OUT/'adapter_sweep_layer22_full_sequence.pt',map_location='cpu'); adapter.load_state_dict(ck['state_dict']); adapter.eval()
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.15it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.22it/s]
+full_sequence_adapter_layer22 1/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.19it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.07it/s]
+full_sequence_adapter_layer22 2/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.34it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.39it/s]
+full_sequence_adapter_layer22 3/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.41it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.43it/s]
+full_sequence_adapter_layer22 4/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.28it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.37it/s]
+full_sequence_adapter_layer22 5/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.44it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.59it/s]
+full_sequence_adapter_layer22 6/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.30it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.38it/s]
+full_sequence_adapter_layer22 7/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.44it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.43it/s]
+full_sequence_adapter_layer22 8/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.35it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.39it/s]
+full_sequence_adapter_layer22 9/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.33it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.38it/s]
+full_sequence_adapter_layer22 10/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.24it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.30it/s]
+full_sequence_adapter_layer22 11/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.44it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.44it/s]
+full_sequence_adapter_layer22 12/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.45it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.45it/s]
+full_sequence_adapter_layer22 13/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.48it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.49it/s]
+full_sequence_adapter_layer22 14/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.40it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.42it/s]
+full_sequence_adapter_layer22 15/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.49it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.48it/s]
+full_sequence_adapter_layer22 16/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.38it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.99it/s]
+full_sequence_adapter_layer22 17/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.86it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.77it/s]
+full_sequence_adapter_layer22 18/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.16it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.91it/s]
+full_sequence_adapter_layer22 19/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.48it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 36.10it/s]
+full_sequence_adapter_layer22 20/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.46it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 36.09it/s]
+full_sequence_adapter_layer22 21/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.26it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 36.01it/s]
+full_sequence_adapter_layer22 22/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.40it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 36.05it/s]
+full_sequence_adapter_layer22 23/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 40.00it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.78it/s]
+full_sequence_adapter_layer22 24/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.86it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.77it/s]
+full_sequence_adapter_layer22 25/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.93it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.72it/s]
+full_sequence_adapter_layer22 26/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.54it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.53it/s]
+full_sequence_adapter_layer22 27/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.17it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.83it/s]
+full_sequence_adapter_layer22 28/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.11it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.83it/s]
+full_sequence_adapter_layer22 29/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.73it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.67it/s]
+full_sequence_adapter_layer22 30/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.94it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.75it/s]
+full_sequence_adapter_layer22 31/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.89it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.72it/s]
+full_sequence_adapter_layer22 32/32 wer=0.000
+/root/autodl-tmp/kfair/code/run_stage3_asr_preservation.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  lora=LoRALinear(original).cuda(); ck=torch.load(OUT/'ordinary_lora_layer22_rank8.pt',map_location='cpu')['state_dict']; lora.A.load_state_dict(ck['A']); lora.B.load_state_dict(ck['B']); lora.eval(); holder['lora']=lora; attn.q_proj=lora
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 40.00it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.26it/s]
+ordinary_lora_layer22 1/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.22it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.27it/s]
+ordinary_lora_layer22 2/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.11it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.20it/s]
+ordinary_lora_layer22 3/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.23it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.27it/s]
+ordinary_lora_layer22 4/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.98it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.21it/s]
+ordinary_lora_layer22 5/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.63it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.73it/s]
+ordinary_lora_layer22 6/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.56it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.56it/s]
+ordinary_lora_layer22 7/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.42it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.45it/s]
+ordinary_lora_layer22 8/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.41it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.48it/s]
+ordinary_lora_layer22 9/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:  10%|█         | 5/48 [00:00<00:01, 40.16it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 35.16it/s]
+ordinary_lora_layer22 10/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.84it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.97it/s]
+ordinary_lora_layer22 11/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.74it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.87it/s]
+ordinary_lora_layer22 12/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 33.51it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 29.91it/s]
+ordinary_lora_layer22 13/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 33.14it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 30.30it/s]
+ordinary_lora_layer22 14/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 38.80it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.32it/s]
+ordinary_lora_layer22 15/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.43it/s]Generating tokens:  15%|█▍        | 7/48 [00:00<00:01, 34.80it/s]
+ordinary_lora_layer22 16/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.73it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.86it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.25it/s]
+ordinary_lora_layer22 17/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.42it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.65it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.24it/s]
+ordinary_lora_layer22 18/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 34.62it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 37.12it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 32.93it/s]
+ordinary_lora_layer22 19/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.61it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.38it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.02it/s]
+ordinary_lora_layer22 20/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.28it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.31it/s]
+ordinary_lora_layer22 21/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.60it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.42it/s]
+ordinary_lora_layer22 22/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.54it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.33it/s]
+ordinary_lora_layer22 23/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 37.98it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 38.02it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 33.96it/s]
+ordinary_lora_layer22 24/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.49it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.19it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 34.92it/s]
+ordinary_lora_layer22 25/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.42it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.66it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 34.34it/s]
+ordinary_lora_layer22 26/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.08it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.22it/s]
+ordinary_lora_layer22 27/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.62it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.82it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.38it/s]
+ordinary_lora_layer22 28/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.55it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.70it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.29it/s]
+ordinary_lora_layer22 29/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.53it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.40it/s]
+ordinary_lora_layer22 30/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.28it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.26it/s]
+ordinary_lora_layer22 31/32 wer=0.000
+Generating tokens:   0%|          | 0/48 [00:00<?, ?it/s]Generating tokens:   8%|▊         | 4/48 [00:00<00:01, 39.32it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 39.67it/s]Generating tokens:  17%|█▋        | 8/48 [00:00<00:01, 35.26it/s]
+ordinary_lora_layer22 32/32 wer=0.000
+                       method  n  micro_wer  mean_wer  exact_match  mean_seconds
+                     baseline 32        0.0       0.0          1.0      0.278263
+     decision_adapter_layer25 32        0.0       0.0          1.0      0.258590
+full_sequence_adapter_layer22 32        0.0       0.0          1.0      0.256172
+        ordinary_lora_layer22 32        0.0       0.0          1.0      0.262690

@@ -1,0 +1,38 @@
+[
+  {
+    "method": "baseline",
+    "n": 24,
+    "mean_ms": 25.75828895593683,
+    "median_ms": 25.763309560716152,
+    "p95_ms": 26.36081539094448,
+    "peak_allocated_gb": 21.041518688201904,
+    "peak_reserved_gb": 22.552734375
+  },
+  {
+    "method": "decision_adapter_layer25_rank8",
+    "n": 24,
+    "mean_ms": 25.763496678943437,
+    "median_ms": 25.68746544420719,
+    "p95_ms": 26.00412257015705,
+    "peak_allocated_gb": 21.04173231124878,
+    "peak_reserved_gb": 22.552734375
+  },
+  {
+    "method": "full_sequence_adapter_layer22_rank8",
+    "n": 24,
+    "mean_ms": 26.467924627165,
+    "median_ms": 25.58013889938593,
+    "p95_ms": 25.95461905002594,
+    "peak_allocated_gb": 21.04173231124878,
+    "peak_reserved_gb": 22.552734375
+  },
+  {
+    "method": "ordinary_lora_q_layer22_rank8",
+    "n": 24,
+    "mean_ms": 25.546415786569316,
+    "median_ms": 25.52174497395754,
+    "p95_ms": 26.179535314440727,
+    "peak_allocated_gb": 21.041945934295654,
+    "peak_reserved_gb": 22.552734375
+  }
+]

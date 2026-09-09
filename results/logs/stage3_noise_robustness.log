@@ -1,0 +1,43 @@
+2026-09-04 05:14:05.417 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-04 05:14:05.417 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 05:14:05.417 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 707.42it/s]
+2026-09-04 05:14:10.078 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-04 05:14:10.078 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-04 05:14:13.519 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+CACHE snr=clean
+CACHE snr=20
+CACHE snr=10
+baseline snr=clean done
+baseline snr=20 done
+baseline snr=10 done
+/root/autodl-tmp/kfair/code/run_stage3_noise_robustness.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  adapter.load_state_dict(torch.load(OUT/'adapter_sweep_layer25.pt',map_location='cpu')['state_dict']); adapter.eval()
+decision_adapter_layer25 snr=clean done
+decision_adapter_layer25 snr=20 done
+decision_adapter_layer25 snr=10 done
+/root/autodl-tmp/kfair/code/run_stage3_noise_robustness.py:52: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  adapter.load_state_dict(torch.load(OUT/'adapter_sweep_layer22_full_sequence.pt',map_location='cpu')['state_dict']); adapter.eval()
+full_sequence_adapter_layer22 snr=clean done
+full_sequence_adapter_layer22 snr=20 done
+full_sequence_adapter_layer22 snr=10 done
+/root/autodl-tmp/kfair/code/run_stage3_noise_robustness.py:56: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  l=LoRALinear(original).cuda(); s=torch.load(OUT/'ordinary_lora_layer22_rank8.pt',map_location='cpu')['state_dict']; l.A.load_state_dict(s['A']); l.B.load_state_dict(s['B']); l.eval(); holder['l']=l; attn.q_proj=l
+ordinary_lora_layer22 snr=clean done
+ordinary_lora_layer22 snr=20 done
+ordinary_lora_layer22 snr=10 done
+                       method snr_db   n      ser  aligned_ser  conflict_acoustic_follow  conflict_semantic_follow  conflict_margin
+                     baseline  clean 192 0.411458      0.43750                  0.385417                  0.197917         0.900391
+                     baseline     20 192 0.416667      0.40625                  0.427083                  0.177083         1.093099
+                     baseline     10 192 0.583333      0.59375                  0.572917                  0.114583         1.331380
+     decision_adapter_layer25  clean 192 0.906250      0.93750                  0.875000                  0.031250         4.138672
+     decision_adapter_layer25     20 192 0.859375      0.87500                  0.843750                  0.072917         3.330078
+     decision_adapter_layer25     10 192 0.817708      0.81250                  0.822917                  0.062500         3.070964
+full_sequence_adapter_layer22  clean 192 0.916667      0.90625                  0.927083                  0.031250         4.097656
+full_sequence_adapter_layer22     20 192 0.859375      0.87500                  0.843750                  0.062500         3.464844
+full_sequence_adapter_layer22     10 192 0.828125      0.84375                  0.812500                  0.072917         3.255208
+        ordinary_lora_layer22  clean 192 0.880208      0.90625                  0.854167                  0.031250         6.183594
+        ordinary_lora_layer22     20 192 0.880208      0.90625                  0.854167                  0.052083         4.634115
+        ordinary_lora_layer22     10 192 0.869792      0.87500                  0.864583                  0.052083         4.118490
