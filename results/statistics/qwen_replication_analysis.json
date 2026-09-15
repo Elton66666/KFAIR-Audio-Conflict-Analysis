@@ -1,0 +1,223 @@
+{
+  "model": "Qwen/Qwen2.5-Omni-7B",
+  "revision": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+  "baseline": {
+    "ravdess_test": {
+      "n": 32,
+      "acoustic_accuracy": 0.65625,
+      "semantic_follow": 0.59375,
+      "mean_acoustic_margin": -0.1679687348078005
+    },
+    "emis_all": {
+      "n": 192,
+      "acoustic_accuracy": 0.2604166666666667,
+      "semantic_follow": 0.9635416666666666,
+      "mean_acoustic_margin": -3.9606119696212168
+    },
+    "emis_aligned": {
+      "n": 48,
+      "acoustic_accuracy": 1.0,
+      "semantic_follow": 1.0,
+      "mean_acoustic_margin": 0.0
+    },
+    "emis_conflict": {
+      "n": 144,
+      "acoustic_accuracy": 0.013888888888888888,
+      "semantic_follow": 0.9513888888888888,
+      "mean_acoustic_margin": -5.280815959494955
+    }
+  },
+  "adapter_mean_std": [
+    {
+      "subset": "emis_aligned",
+      "seeds": 3,
+      "accuracy_mean": 0.9791666666666666,
+      "accuracy_std": 0.03608439182435161,
+      "margin_mean": 0.0,
+      "margin_std": 0.0
+    },
+    {
+      "subset": "emis_all",
+      "seeds": 3,
+      "accuracy_mean": 0.27777777777777773,
+      "accuracy_std": 0.012028130608117226,
+      "margin_mean": -6.5183376500203885,
+      "margin_std": 0.6070910738325606
+    },
+    {
+      "subset": "emis_conflict",
+      "seeds": 3,
+      "accuracy_mean": 0.043981481481481476,
+      "accuracy_std": 0.014456013885181477,
+      "margin_mean": -8.691116866693852,
+      "margin_std": 0.8094547651100813
+    },
+    {
+      "subset": "ravdess_test",
+      "seeds": 3,
+      "accuracy_mean": 0.84375,
+      "accuracy_std": 0.08267972847076846,
+      "margin_mean": 4.355468719133261,
+      "margin_std": 2.5901714367651083
+    }
+  ],
+  "paired_effects": [
+    {
+      "seed": 20260903,
+      "subset": "ravdess_test",
+      "delta_accuracy": 0.25,
+      "delta_accuracy_ci_low": 0.15625,
+      "delta_accuracy_ci_high": 0.34375,
+      "delta_margin": 6.689453079900538,
+      "delta_margin_ci_low": 5.517578112365889,
+      "delta_margin_ci_high": 7.589843732739766,
+      "mcnemar_exact_p": 0.03857421875,
+      "improved": 10,
+      "harmed": 2
+    },
+    {
+      "seed": 20260904,
+      "subset": "ravdess_test",
+      "delta_accuracy": 0.21875,
+      "delta_accuracy_ci_low": 0.0625,
+      "delta_accuracy_ci_high": 0.34375,
+      "delta_margin": 5.226562419594636,
+      "delta_margin_ci_low": 4.144531174873691,
+      "delta_margin_ci_high": 6.261718638577527,
+      "mcnemar_exact_p": 0.015625,
+      "improved": 7,
+      "harmed": 0
+    },
+    {
+      "seed": 20260905,
+      "subset": "ravdess_test",
+      "delta_accuracy": 0.09375,
+      "delta_accuracy_ci_low": 0.0,
+      "delta_accuracy_ci_high": 0.1875,
+      "delta_margin": 1.6542968623280103,
+      "delta_margin_ci_low": 1.3496093726353138,
+      "delta_margin_ci_high": 2.0156249816218406,
+      "mcnemar_exact_p": 0.25,
+      "improved": 3,
+      "harmed": 0
+    },
+    {
+      "seed": 20260903,
+      "subset": "emis_all",
+      "delta_accuracy": 0.010416666666666666,
+      "delta_accuracy_ci_low": -0.010416666666666666,
+      "delta_accuracy_ci_high": 0.034482758620689655,
+      "delta_margin": -3.067382803904032,
+      "delta_margin_ci_low": -3.7754155055023335,
+      "delta_margin_ci_high": -1.8242074175167826,
+      "mcnemar_exact_p": 0.7265625,
+      "improved": 5,
+      "harmed": 3
+    },
+    {
+      "seed": 20260904,
+      "subset": "emis_all",
+      "delta_accuracy": 0.03125,
+      "delta_accuracy_ci_low": 0.013157894736842105,
+      "delta_accuracy_ci_high": 0.057692307692307696,
+      "delta_margin": -2.7197265613121266,
+      "delta_margin_ci_low": -3.2807482033202002,
+      "delta_margin_ci_high": -1.7386548933491328,
+      "mcnemar_exact_p": 0.03125,
+      "improved": 6,
+      "harmed": 0
+    },
+    {
+      "seed": 20260905,
+      "subset": "emis_all",
+      "delta_accuracy": 0.010416666666666666,
+      "delta_accuracy_ci_low": 0.0,
+      "delta_accuracy_ci_high": 0.03205128205128205,
+      "delta_margin": -1.8860676759813562,
+      "delta_margin_ci_low": -2.2177527489110007,
+      "delta_margin_ci_high": -1.3075181049064892,
+      "mcnemar_exact_p": 0.5,
+      "improved": 2,
+      "harmed": 0
+    },
+    {
+      "seed": 20260903,
+      "subset": "emis_aligned",
+      "delta_accuracy": -0.0625,
+      "delta_accuracy_ci_low": -0.125,
+      "delta_accuracy_ci_high": 0.0,
+      "delta_margin": 0.0,
+      "delta_margin_ci_low": 0.0,
+      "delta_margin_ci_high": 0.0,
+      "mcnemar_exact_p": 0.25,
+      "improved": 0,
+      "harmed": 3
+    },
+    {
+      "seed": 20260904,
+      "subset": "emis_aligned",
+      "delta_accuracy": 0.0,
+      "delta_accuracy_ci_low": 0.0,
+      "delta_accuracy_ci_high": 0.0,
+      "delta_margin": 0.0,
+      "delta_margin_ci_low": 0.0,
+      "delta_margin_ci_high": 0.0,
+      "mcnemar_exact_p": 1.0,
+      "improved": 0,
+      "harmed": 0
+    },
+    {
+      "seed": 20260905,
+      "subset": "emis_aligned",
+      "delta_accuracy": 0.0,
+      "delta_accuracy_ci_low": 0.0,
+      "delta_accuracy_ci_high": 0.0,
+      "delta_margin": 0.0,
+      "delta_margin_ci_low": 0.0,
+      "delta_margin_ci_high": 0.0,
+      "mcnemar_exact_p": 1.0,
+      "improved": 0,
+      "harmed": 0
+    },
+    {
+      "seed": 20260903,
+      "subset": "emis_conflict",
+      "delta_accuracy": 0.034722222222222224,
+      "delta_accuracy_ci_low": 0.011111111111111112,
+      "delta_accuracy_ci_high": 0.07777777777777778,
+      "delta_margin": -4.089843738538709,
+      "delta_margin_ci_low": -4.681251924886525,
+      "delta_margin_ci_high": -2.7971180401924,
+      "mcnemar_exact_p": 0.0625,
+      "improved": 5,
+      "harmed": 0
+    },
+    {
+      "seed": 20260904,
+      "subset": "emis_conflict",
+      "delta_accuracy": 0.041666666666666664,
+      "delta_accuracy_ci_low": 0.016666666666666666,
+      "delta_accuracy_ci_high": 0.08333333333333333,
+      "delta_margin": -3.626302081749502,
+      "delta_margin_ci_low": -4.0603167360843475,
+      "delta_margin_ci_high": -2.665937503135337,
+      "mcnemar_exact_p": 0.03125,
+      "improved": 6,
+      "harmed": 0
+    },
+    {
+      "seed": 20260905,
+      "subset": "emis_conflict",
+      "delta_accuracy": 0.013888888888888888,
+      "delta_accuracy_ci_low": 0.0,
+      "delta_accuracy_ci_high": 0.046296296296296294,
+      "delta_margin": -2.514756901308475,
+      "delta_margin_ci_low": -2.7527777133361035,
+      "delta_margin_ci_high": -2.005538164506547,
+      "mcnemar_exact_p": 0.5,
+      "improved": 2,
+      "harmed": 0
+    }
+  ],
+  "interpretation_guardrail": "Qwen has a continuous audio encoder rather than Kimi's separable native discrete/continuous audio streams. Results support cross-model behavioral replication and low-rank correction, not exact internal stream equivalence."
+}

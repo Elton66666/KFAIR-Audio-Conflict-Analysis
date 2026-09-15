@@ -28,6 +28,7 @@
 9. `reports/实践导向第一二轮结果_2026-09-04.md`
 10. `reports/实践导向第三轮结果_2026-09-04.md`
 11. `reports/KFAIR_本次工作总报告_三项优先工作与实践验证.md`
+12. `reports/投稿前高优先级补实验结果_2026-09-16.md` (latest six-fold actor CV and Qwen2.5-Omni replication)
 
 The later total reports supersede status statements in earlier reports. Earlier reports remain important for reconstructing decisions and failed assumptions.
 
@@ -45,4 +46,5 @@ The later total reports supersede status statements in earlier reports. Earlier 
 - Repair sweep and ablations: `adapter_sweep*`
 - Practical baselines and efficiency: `practical_baselines*`, `efficiency_benchmark*`
 - Capability preservation and robustness: `stage3_*`
-
+- Six-fold held-out-actor CV: `actor_cv6_*`
+- Qwen2.5-Omni cross-model replication: `qwen_behavioral_*`, `qwen_adapter_*`, `qwen_replication_*`

@@ -1,0 +1,190 @@
+[2026-09-16T05:17:53] START actor_cv6_analysis: /root/autodl-tmp/kfair/fastenv2/bin/python analyze_actor_cv6.py
+                       method  n_folds  n_runs  ser_mean  ser_std  ser_min_fold  ser_max_fold  aligned_ser_mean  aligned_ser_std  aligned_ser_min_fold  aligned_ser_max_fold  conflict_acoustic_follow_mean  conflict_acoustic_follow_std  conflict_acoustic_follow_min_fold  conflict_acoustic_follow_max_fold  conflict_semantic_follow_mean  conflict_semantic_follow_std  conflict_semantic_follow_min_fold  conflict_semantic_follow_max_fold  conflict_margin_mean  conflict_margin_std  conflict_margin_min_fold  conflict_margin_max_fold
+                     baseline        6       6  0.436632 0.092081      0.291667      0.546875          0.447917         0.083073              0.312500              0.531250                       0.425347                      0.102786                           0.270833                           0.562500                       0.187500                      0.031595                           0.145833                           0.229167              1.162760             0.413226                  0.768229                  1.697917
+     decision_adapter_layer25        6      18  0.755208 0.110343      0.574653      0.913194          0.750000         0.114867              0.562500              0.916667                       0.760417                      0.106184                           0.586806                           0.909722                       0.076968                      0.036774                           0.027778                           0.138889              3.374060             0.720681                  2.009983                  4.092231
+full_sequence_adapter_layer22        6      18  0.761285 0.062536      0.671875      0.862847          0.763889         0.068360              0.666667              0.875000                       0.758681                      0.057841                           0.677083                           0.850694                       0.078704                      0.022574                           0.045139                           0.114583              3.491319             0.444846                  2.872830                  4.089627
+        ordinary_lora_layer22        6      18  0.779514 0.103161      0.631944      0.935764          0.779514         0.101938              0.625000              0.927083                       0.779514                      0.104968                           0.638889                           0.944444                       0.072917                      0.034091                           0.020833                           0.121528              5.440068             1.069812                  4.010634                  7.071832
+                       method  n_folds  delta_ser_mean  delta_ser_std  delta_ser_min_fold  delta_ser_max_fold  delta_ser_wilcoxon_p  delta_aligned_ser_mean  delta_aligned_ser_std  delta_aligned_ser_min_fold  delta_aligned_ser_max_fold  delta_aligned_ser_wilcoxon_p  delta_conflict_acoustic_follow_mean  delta_conflict_acoustic_follow_std  delta_conflict_acoustic_follow_min_fold  delta_conflict_acoustic_follow_max_fold  delta_conflict_acoustic_follow_wilcoxon_p  delta_conflict_semantic_follow_mean  delta_conflict_semantic_follow_std  delta_conflict_semantic_follow_min_fold  delta_conflict_semantic_follow_max_fold  delta_conflict_semantic_follow_wilcoxon_p  delta_conflict_margin_mean  delta_conflict_margin_std  delta_conflict_margin_min_fold  delta_conflict_margin_max_fold  delta_conflict_margin_wilcoxon_p
+     decision_adapter_layer25        6        0.318576       0.162420            0.105903            0.501736               0.03125                0.302083               0.154504                    0.093750                    0.479167                       0.03125                             0.335069                            0.171526                                 0.118056                                 0.524306                                    0.03125                            -0.110532                            0.054390                                -0.173611                                -0.048611                                    0.03125                    2.211299                   0.783615                        0.964410                        3.191840                           0.03125
+full_sequence_adapter_layer22        6        0.324653       0.115979            0.203125            0.467014               0.03125                0.315972               0.104305                    0.197917                    0.437500                       0.03125                             0.333333                            0.128875                                 0.208333                                 0.496528                                    0.03125                            -0.108796                            0.036527                                -0.152778                                -0.072917                                    0.03125                    2.328559                   0.489724                        1.827257                        3.189236                           0.03125
+        ordinary_lora_layer22        6        0.342882       0.163397            0.163194            0.543403               0.03125                0.331597               0.150724                    0.156250                    0.520833                       0.03125                             0.354167                            0.177566                                 0.170139                                 0.565972                                    0.03125                            -0.114583                            0.053024                                -0.177083                                -0.065972                                    0.03125                    4.277308                   1.202168                        2.965061                        6.171441                           0.03125
+WROTE /root/autodl-tmp/kfair/outputs/actor_cv6_aggregate.csv /root/autodl-tmp/kfair/outputs/actor_cv6_fold_seed_metrics.csv /root/autodl-tmp/kfair/outputs/actor_cv6_actor_metrics.csv /root/autodl-tmp/kfair/outputs/actor_cv6_paired_effects.csv
+[2026-09-16T05:17:55] DONE actor_cv6_analysis
+[2026-09-16T05:17:55] START qwen_behavior: /root/autodl-tmp/kfair/fastenv2/bin/python run_qwen_behavioral_replication.py --overwrite
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.35s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.21s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.17s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.19it/s]
+WARNING:root:System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+BEHAVIOR 16/384 RAVDESS
+BEHAVIOR 32/384 RAVDESS
+BEHAVIOR 48/384 RAVDESS
+BEHAVIOR 64/384 RAVDESS
+BEHAVIOR 80/384 RAVDESS
+BEHAVIOR 96/384 RAVDESS
+BEHAVIOR 112/384 RAVDESS
+BEHAVIOR 128/384 RAVDESS
+BEHAVIOR 144/384 RAVDESS
+BEHAVIOR 160/384 RAVDESS
+BEHAVIOR 176/384 RAVDESS
+BEHAVIOR 192/384 RAVDESS
+BEHAVIOR 208/384 EMIS
+BEHAVIOR 224/384 EMIS
+BEHAVIOR 240/384 EMIS
+BEHAVIOR 256/384 EMIS
+BEHAVIOR 272/384 EMIS
+BEHAVIOR 288/384 EMIS
+BEHAVIOR 304/384 EMIS
+BEHAVIOR 320/384 EMIS
+BEHAVIOR 336/384 EMIS
+BEHAVIOR 352/384 EMIS
+BEHAVIOR 368/384 EMIS
+BEHAVIOR 384/384 EMIS
+{
+  "model": "Qwen/Qwen2.5-Omni-7B",
+  "revision": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+  "architecture_note": "Qwen uses one continuous audio encoder rather than Kimi's separable native discrete/continuous audio streams. This is a behavioral semantic-by-acoustic replication, not an internal stream-swap replication.",
+  "prompt": "Classify only the speaker's vocal emotion. Choose exactly one: A=neutral, B=happy, C=sad, D=angry. Reply with only A, B, C, or D.",
+  "n": 384,
+  "ravdess_accuracy": 0.6822916666666666,
+  "emis_aligned_accuracy": 1.0,
+  "emis_conflict_acoustic_follow": 0.013888888888888888,
+  "emis_conflict_semantic_follow": 0.9513888888888888
+}
+DONE
+[2026-09-16T05:18:43] DONE qwen_behavior
+[2026-09-16T05:18:43] START qwen_adapter: /root/autodl-tmp/kfair/fastenv2/bin/python run_qwen_adapter_replication.py
+Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.63s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.45s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:04<00:02,  1.47s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:05<00:01,  1.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.06s/it]
+WARNING:root:System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+TRAIN seed=20260903 epoch=1 32/128 loss=0.6967
+TRAIN seed=20260903 epoch=1 64/128 loss=0.7909
+TRAIN seed=20260903 epoch=1 96/128 loss=0.7476
+TRAIN seed=20260903 epoch=1 128/128 loss=0.7109
+EVAL seed=20260903 split=validation 32/32
+EPOCH seed=20260903 epoch=1 {"epoch": 1, "loss": 0.7108717435526977, "n": 32, "acoustic_accuracy": 0.78125, "mean_acoustic_margin": 6.134765628457643, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7083333333333334, "conflict_semantic_follow": 0.125}
+TRAIN seed=20260903 epoch=2 32/128 loss=0.5952
+TRAIN seed=20260903 epoch=2 64/128 loss=0.4669
+TRAIN seed=20260903 epoch=2 96/128 loss=0.8454
+TRAIN seed=20260903 epoch=2 128/128 loss=0.7462
+EVAL seed=20260903 split=validation 32/32
+EPOCH seed=20260903 epoch=2 {"epoch": 2, "loss": 0.7461561124977121, "n": 32, "acoustic_accuracy": 0.875, "mean_acoustic_margin": 3.6542968517060217, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.8333333333333334, "conflict_semantic_follow": 0.125}
+TRAIN seed=20260903 epoch=3 32/128 loss=0.5427
+TRAIN seed=20260903 epoch=3 64/128 loss=0.3826
+TRAIN seed=20260903 epoch=3 96/128 loss=0.4467
+TRAIN seed=20260903 epoch=3 128/128 loss=0.4841
+EVAL seed=20260903 split=validation 32/32
+EPOCH seed=20260903 epoch=3 {"epoch": 3, "loss": 0.48407979103537513, "n": 32, "acoustic_accuracy": 0.875, "mean_acoustic_margin": 6.070312471759273, "aligned_accuracy": 0.875, "conflict_acoustic_follow": 0.875, "conflict_semantic_follow": 0.08333333333333333}
+TRAIN seed=20260903 epoch=4 32/128 loss=0.5623
+TRAIN seed=20260903 epoch=4 64/128 loss=0.3963
+TRAIN seed=20260903 epoch=4 96/128 loss=0.3114
+TRAIN seed=20260903 epoch=4 128/128 loss=0.4462
+EVAL seed=20260903 split=validation 32/32
+EPOCH seed=20260903 epoch=4 {"epoch": 4, "loss": 0.44618948837916966, "n": 32, "acoustic_accuracy": 0.78125, "mean_acoustic_margin": 3.4609375612133633, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7083333333333334, "conflict_semantic_follow": 0.125}
+EVAL seed=20260903 split=test 32/32
+EVAL seed=20260903 split=emis_zero_shot 32/192
+EVAL seed=20260903 split=emis_zero_shot 64/192
+EVAL seed=20260903 split=emis_zero_shot 96/192
+EVAL seed=20260903 split=emis_zero_shot 128/192
+EVAL seed=20260903 split=emis_zero_shot 160/192
+EVAL seed=20260903 split=emis_zero_shot 192/192
+RESULT {"seed": 20260903, "layer": 25, "rank": 8, "parameters": 57344, "best_epoch": 3, "history": [{"epoch": 1, "loss": 0.7108717435526977, "n": 32, "acoustic_accuracy": 0.78125, "mean_acoustic_margin": 6.134765628457643, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7083333333333334, "conflict_semantic_follow": 0.125}, {"epoch": 2, "loss": 0.7461561124977121, "n": 32, "acoustic_accuracy": 0.875, "mean_acoustic_margin": 3.6542968517060217, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.8333333333333334, "conflict_semantic_follow": 0.125}, {"epoch": 3, "loss": 0.48407979103537513, "n": 32, "acoustic_accuracy": 0.875, "mean_acoustic_margin": 6.070312471759273, "aligned_accuracy": 0.875, "conflict_acoustic_follow": 0.875, "conflict_semantic_follow": 0.08333333333333333}, {"epoch": 4, "loss": 0.44618948837916966, "n": 32, "acoustic_accuracy": 0.78125, "mean_acoustic_margin": 3.4609375612133633, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7083333333333334, "conflict_semantic_follow": 0.125}], "test": {"n": 32, "acoustic_accuracy": 0.90625, "mean_acoustic_margin": 6.5214843450927376, "aligned_accuracy": 0.75, "conflict_acoustic_follow": 0.9583333333333334, "conflict_semantic_follow": 0.041666666666666664}, "emis_zero_shot": {"n": 192, "acoustic_accuracy": 0.2708333333333333, "mean_acoustic_margin": -7.027994773525248, "aligned_accuracy": 0.9375, "conflict_acoustic_follow": 0.04861111111111111, "conflict_semantic_follow": 0.8958333333333334}, "seconds": 83.70656442642212, "checkpoint": "/root/autodl-tmp/kfair/outputs/qwen_adapter_checkpoints/qwen_decision_adapter_layer25_rank8_seed20260903.pt"}
+TRAIN seed=20260904 epoch=1 32/128 loss=0.8097
+TRAIN seed=20260904 epoch=1 64/128 loss=0.5362
+TRAIN seed=20260904 epoch=1 96/128 loss=1.0504
+TRAIN seed=20260904 epoch=1 128/128 loss=0.9427
+EVAL seed=20260904 split=validation 32/32
+EPOCH seed=20260904 epoch=1 {"epoch": 1, "loss": 0.9427116404225493, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 3.5039062284449756, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.08333333333333333}
+TRAIN seed=20260904 epoch=2 32/128 loss=0.6807
+TRAIN seed=20260904 epoch=2 64/128 loss=0.4458
+TRAIN seed=20260904 epoch=2 96/128 loss=0.5120
+TRAIN seed=20260904 epoch=2 128/128 loss=0.5885
+EVAL seed=20260904 split=validation 32/32
+EPOCH seed=20260904 epoch=2 {"epoch": 2, "loss": 0.5884676298321763, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 5.558593703647919, "aligned_accuracy": 0.875, "conflict_acoustic_follow": 0.7916666666666666, "conflict_semantic_follow": 0.08333333333333333}
+TRAIN seed=20260904 epoch=3 32/128 loss=0.5547
+TRAIN seed=20260904 epoch=3 64/128 loss=0.4572
+TRAIN seed=20260904 epoch=3 96/128 loss=0.3953
+TRAIN seed=20260904 epoch=3 128/128 loss=0.5635
+EVAL seed=20260904 split=validation 32/32
+EPOCH seed=20260904 epoch=3 {"epoch": 3, "loss": 0.563526113856752, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 5.3652344039391835, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}
+TRAIN seed=20260904 epoch=4 32/128 loss=0.4224
+TRAIN seed=20260904 epoch=4 64/128 loss=0.4989
+TRAIN seed=20260904 epoch=4 96/128 loss=0.5954
+TRAIN seed=20260904 epoch=4 128/128 loss=0.6126
+EVAL seed=20260904 split=validation 32/32
+EPOCH seed=20260904 epoch=4 {"epoch": 4, "loss": 0.6125615844185044, "n": 32, "acoustic_accuracy": 0.84375, "mean_acoustic_margin": 4.6406250016432935, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7916666666666666, "conflict_semantic_follow": 0.125}
+EVAL seed=20260904 split=test 32/32
+EVAL seed=20260904 split=emis_zero_shot 32/192
+EVAL seed=20260904 split=emis_zero_shot 64/192
+EVAL seed=20260904 split=emis_zero_shot 96/192
+EVAL seed=20260904 split=emis_zero_shot 128/192
+EVAL seed=20260904 split=emis_zero_shot 160/192
+EVAL seed=20260904 split=emis_zero_shot 192/192
+RESULT {"seed": 20260904, "layer": 25, "rank": 8, "parameters": 57344, "best_epoch": 4, "history": [{"epoch": 1, "loss": 0.9427116404225493, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 3.5039062284449756, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.08333333333333333}, {"epoch": 2, "loss": 0.5884676298321763, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 5.558593703647919, "aligned_accuracy": 0.875, "conflict_acoustic_follow": 0.7916666666666666, "conflict_semantic_follow": 0.08333333333333333}, {"epoch": 3, "loss": 0.563526113856752, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 5.3652344039391835, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}, {"epoch": 4, "loss": 0.6125615844185044, "n": 32, "acoustic_accuracy": 0.84375, "mean_acoustic_margin": 4.6406250016432935, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7916666666666666, "conflict_semantic_follow": 0.125}], "test": {"n": 32, "acoustic_accuracy": 0.875, "mean_acoustic_margin": 5.058593684786835, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.8333333333333334, "conflict_semantic_follow": 0.16666666666666666}, "emis_zero_shot": {"n": 192, "acoustic_accuracy": 0.2916666666666667, "mean_acoustic_margin": -6.680338530933343, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.05555555555555555, "conflict_semantic_follow": 0.9097222222222222}, "seconds": 86.19301128387451, "checkpoint": "/root/autodl-tmp/kfair/outputs/qwen_adapter_checkpoints/qwen_decision_adapter_layer25_rank8_seed20260904.pt"}
+TRAIN seed=20260905 epoch=1 32/128 loss=0.9892
+TRAIN seed=20260905 epoch=1 64/128 loss=0.6322
+TRAIN seed=20260905 epoch=1 96/128 loss=0.7415
+TRAIN seed=20260905 epoch=1 128/128 loss=0.7299
+EVAL seed=20260905 split=validation 32/32
+EPOCH seed=20260905 epoch=1 {"epoch": 1, "loss": 0.7298964113332036, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 6.070312459610392, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}
+TRAIN seed=20260905 epoch=2 32/128 loss=0.8128
+TRAIN seed=20260905 epoch=2 64/128 loss=0.5810
+TRAIN seed=20260905 epoch=2 96/128 loss=0.5133
+TRAIN seed=20260905 epoch=2 128/128 loss=0.5467
+EVAL seed=20260905 split=validation 32/32
+EPOCH seed=20260905 epoch=2 {"epoch": 2, "loss": 0.5466771226742625, "n": 32, "acoustic_accuracy": 0.84375, "mean_acoustic_margin": 1.937499994175596, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7916666666666666, "conflict_semantic_follow": 0.125}
+TRAIN seed=20260905 epoch=3 32/128 loss=0.5894
+TRAIN seed=20260905 epoch=3 64/128 loss=0.8462
+TRAIN seed=20260905 epoch=3 96/128 loss=0.8124
+TRAIN seed=20260905 epoch=3 128/128 loss=0.8004
+EVAL seed=20260905 split=validation 32/32
+EPOCH seed=20260905 epoch=3 {"epoch": 3, "loss": 0.8004114220711704, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 6.121093711081677, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}
+TRAIN seed=20260905 epoch=4 32/128 loss=0.4124
+TRAIN seed=20260905 epoch=4 64/128 loss=0.3486
+TRAIN seed=20260905 epoch=4 96/128 loss=0.4415
+TRAIN seed=20260905 epoch=4 128/128 loss=0.5157
+EVAL seed=20260905 split=validation 32/32
+EPOCH seed=20260905 epoch=4 {"epoch": 4, "loss": 0.5157449128405021, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 6.521484365925539, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}
+EVAL seed=20260905 split=test 32/32
+EVAL seed=20260905 split=emis_zero_shot 32/192
+EVAL seed=20260905 split=emis_zero_shot 64/192
+EVAL seed=20260905 split=emis_zero_shot 96/192
+EVAL seed=20260905 split=emis_zero_shot 128/192
+EVAL seed=20260905 split=emis_zero_shot 160/192
+EVAL seed=20260905 split=emis_zero_shot 192/192
+RESULT {"seed": 20260905, "layer": 25, "rank": 8, "parameters": 57344, "best_epoch": 2, "history": [{"epoch": 1, "loss": 0.7298964113332036, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 6.070312459610392, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}, {"epoch": 2, "loss": 0.5466771226742625, "n": 32, "acoustic_accuracy": 0.84375, "mean_acoustic_margin": 1.937499994175596, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.7916666666666666, "conflict_semantic_follow": 0.125}, {"epoch": 3, "loss": 0.8004114220711704, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 6.121093711081677, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}, {"epoch": 4, "loss": 0.5157449128405021, "n": 32, "acoustic_accuracy": 0.8125, "mean_acoustic_margin": 6.521484365925539, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.75, "conflict_semantic_follow": 0.125}], "test": {"n": 32, "acoustic_accuracy": 0.75, "mean_acoustic_margin": 1.4863281275202098, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.6666666666666666, "conflict_semantic_follow": 0.2916666666666667}, "emis_zero_shot": {"n": 192, "acoustic_accuracy": 0.2708333333333333, "mean_acoustic_margin": -5.846679645602573, "aligned_accuracy": 1.0, "conflict_acoustic_follow": 0.027777777777777776, "conflict_semantic_follow": 0.9375}, "seconds": 85.29299473762512, "checkpoint": "/root/autodl-tmp/kfair/outputs/qwen_adapter_checkpoints/qwen_decision_adapter_layer25_rank8_seed20260905.pt"}
+DONE
+[2026-09-16T05:23:11] DONE qwen_adapter
+[2026-09-16T05:23:11] START qwen_analysis: /root/autodl-tmp/kfair/fastenv2/bin/python analyze_qwen_replication.py
+                  method     seed        subset   n  acoustic_accuracy  semantic_follow  mean_acoustic_margin
+                    base     base  ravdess_test  32           0.656250         0.593750             -0.167969
+decision_adapter_layer25 20260903  ravdess_test  32           0.906250         0.218750              6.521484
+decision_adapter_layer25 20260904  ravdess_test  32           0.875000         0.375000              5.058594
+decision_adapter_layer25 20260905  ravdess_test  32           0.750000         0.468750              1.486328
+                    base     base      emis_all 192           0.260417         0.963542             -3.960612
+decision_adapter_layer25 20260903      emis_all 192           0.270833         0.906250             -7.027995
+decision_adapter_layer25 20260904      emis_all 192           0.291667         0.932292             -6.680339
+decision_adapter_layer25 20260905      emis_all 192           0.270833         0.953125             -5.846680
+                    base     base  emis_aligned  48           1.000000         1.000000              0.000000
+decision_adapter_layer25 20260903  emis_aligned  48           0.937500         0.937500              0.000000
+decision_adapter_layer25 20260904  emis_aligned  48           1.000000         1.000000              0.000000
+decision_adapter_layer25 20260905  emis_aligned  48           1.000000         1.000000              0.000000
+                    base     base emis_conflict 144           0.013889         0.951389             -5.280816
+decision_adapter_layer25 20260903 emis_conflict 144           0.048611         0.895833             -9.370660
+decision_adapter_layer25 20260904 emis_conflict 144           0.055556         0.909722             -8.907118
+decision_adapter_layer25 20260905 emis_conflict 144           0.027778         0.937500             -7.795573
+    seed        subset  delta_accuracy  delta_accuracy_ci_low  delta_accuracy_ci_high  delta_margin  delta_margin_ci_low  delta_margin_ci_high  mcnemar_exact_p  improved  harmed
+20260903  ravdess_test        0.250000               0.156250                0.343750      6.689453             5.517578              7.589844         0.038574        10       2
+20260904  ravdess_test        0.218750               0.062500                0.343750      5.226562             4.144531              6.261719         0.015625         7       0
+20260905  ravdess_test        0.093750               0.000000                0.187500      1.654297             1.349609              2.015625         0.250000         3       0
+20260903      emis_all        0.010417              -0.010417                0.034483     -3.067383            -3.775416             -1.824207         0.726562         5       3
+20260904      emis_all        0.031250               0.013158                0.057692     -2.719727            -3.280748             -1.738655         0.031250         6       0
+20260905      emis_all        0.010417               0.000000                0.032051     -1.886068            -2.217753             -1.307518         0.500000         2       0
+20260903  emis_aligned       -0.062500              -0.125000                0.000000      0.000000             0.000000              0.000000         0.250000         0       3
+20260904  emis_aligned        0.000000               0.000000                0.000000      0.000000             0.000000              0.000000         1.000000         0       0
+20260905  emis_aligned        0.000000               0.000000                0.000000      0.000000             0.000000              0.000000         1.000000         0       0
+20260903 emis_conflict        0.034722               0.011111                0.077778     -4.089844            -4.681252             -2.797118         0.062500         5       0
+20260904 emis_conflict        0.041667               0.016667                0.083333     -3.626302            -4.060317             -2.665938         0.031250         6       0
+20260905 emis_conflict        0.013889               0.000000                0.046296     -2.514757            -2.752778             -2.005538         0.500000         2       0
+[2026-09-16T05:23:13] DONE qwen_analysis
+[2026-09-16T05:23:13] ALL HIGH-PRIORITY EXPERIMENTS COMPLETED

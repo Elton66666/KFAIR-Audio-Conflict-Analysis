@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-Omni-7B",
+  "revision": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+  "architecture_note": "Qwen uses one continuous audio encoder rather than Kimi's separable native discrete/continuous audio streams. This is a behavioral semantic-by-acoustic replication, not an internal stream-swap replication.",
+  "prompt": "Classify only the speaker's vocal emotion. Choose exactly one: A=neutral, B=happy, C=sad, D=angry. Reply with only A, B, C, or D.",
+  "n": 384,
+  "ravdess_accuracy": 0.6822916666666666,
+  "emis_aligned_accuracy": 1.0,
+  "emis_conflict_acoustic_follow": 0.013888888888888888,
+  "emis_conflict_semantic_follow": 0.9513888888888888
+}
