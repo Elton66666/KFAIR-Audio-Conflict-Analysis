@@ -1,0 +1,25 @@
+{
+  "qwen_rows": 1344,
+  "qwen_unique": 1344,
+  "qwen_method_seed_split": {
+    "full_sequence_adapter_layer22|20260903|test": 32,
+    "full_sequence_adapter_layer22|20260903|emis_zero_shot": 192,
+    "full_sequence_adapter_layer22|20260904|test": 32,
+    "full_sequence_adapter_layer22|20260904|emis_zero_shot": 192,
+    "full_sequence_adapter_layer22|20260905|test": 32,
+    "full_sequence_adapter_layer22|20260905|emis_zero_shot": 192,
+    "ordinary_lora_layer22|20260903|test": 32,
+    "ordinary_lora_layer22|20260903|emis_zero_shot": 192,
+    "ordinary_lora_layer22|20260904|test": 32,
+    "ordinary_lora_layer22|20260904|emis_zero_shot": 192,
+    "ordinary_lora_layer22|20260905|test": 32,
+    "ordinary_lora_layer22|20260905|emis_zero_shot": 192
+  },
+  "robust_rows": 1920,
+  "robust_unique": 1920,
+  "robust_combinations": 60,
+  "asr_rows": 3840,
+  "asr_unique": 3840,
+  "asr_combinations": 20,
+  "asr_empty_transcripts": 0
+}

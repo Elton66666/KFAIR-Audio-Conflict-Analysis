@@ -1,0 +1,115 @@
+AUDIO_PREP 8/32
+AUDIO_PREP 16/32
+AUDIO_PREP 24/32
+AUDIO_PREP 32/32
+2026-09-16 06:41:16.515 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-16 06:41:16.515 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-16 06:41:16.515 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 821.33it/s]
+2026-09-16 06:41:20.808 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-16 06:41:20.808 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-16 06:41:27.245 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+CACHE clean
+CACHE real_noise_10db
+CACHE real_office_rir
+CACHE g711_mulaw_8khz
+CACHE rir_plus_noise
+CACHE combined_rir_noise_g711
+ROBUST baseline 0 clean
+ROBUST baseline 0 real_noise_10db
+ROBUST baseline 0 real_office_rir
+ROBUST baseline 0 g711_mulaw_8khz
+ROBUST baseline 0 rir_plus_noise
+ROBUST baseline 0 combined_rir_noise_g711
+RESULT {"method": "baseline", "seed": 0, "seconds": 4.999574184417725, "conditions": {"clean": {"n": 32, "accuracy": 0.4375, "semantic_follow": 0.34375, "mean_acoustic_margin": 0.8808593587018549}, "real_noise_10db": {"n": 32, "accuracy": 0.5625, "semantic_follow": 0.375, "mean_acoustic_margin": 0.8398437321884558}, "real_office_rir": {"n": 32, "accuracy": 0.28125, "semantic_follow": 0.25, "mean_acoustic_margin": 0.26562499441206455}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.5, "semantic_follow": 0.34375, "mean_acoustic_margin": 1.0996093803551048}, "rir_plus_noise": {"n": 32, "accuracy": 0.3125, "semantic_follow": 0.28125, "mean_acoustic_margin": 0.16992187732830644}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.375, "semantic_follow": 0.375, "mean_acoustic_margin": -0.03906248649582267}}}
+ROBUST decision_adapter_layer25 20260903 clean
+ROBUST decision_adapter_layer25 20260903 real_noise_10db
+ROBUST decision_adapter_layer25 20260903 real_office_rir
+ROBUST decision_adapter_layer25 20260903 g711_mulaw_8khz
+ROBUST decision_adapter_layer25 20260903 rir_plus_noise
+ROBUST decision_adapter_layer25 20260903 combined_rir_noise_g711
+RESULT {"method": "decision_adapter_layer25", "seed": 20260903, "seconds": 4.974488735198975, "conditions": {"clean": {"n": 32, "accuracy": 0.9375, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.4707031033176463}, "real_noise_10db": {"n": 32, "accuracy": 0.9375, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.3027344009751687}, "real_office_rir": {"n": 32, "accuracy": 0.78125, "semantic_follow": 0.1875, "mean_acoustic_margin": 2.9648437808500603}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.29882812537835}, "rir_plus_noise": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.21875, "mean_acoustic_margin": 2.9550781381258275}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.25, "mean_acoustic_margin": 2.25976562948199}}}
+ROBUST decision_adapter_layer25 20260904 clean
+ROBUST decision_adapter_layer25 20260904 real_noise_10db
+ROBUST decision_adapter_layer25 20260904 real_office_rir
+ROBUST decision_adapter_layer25 20260904 g711_mulaw_8khz
+ROBUST decision_adapter_layer25 20260904 rir_plus_noise
+ROBUST decision_adapter_layer25 20260904 combined_rir_noise_g711
+RESULT {"method": "decision_adapter_layer25", "seed": 20260904, "seconds": 4.959366798400879, "conditions": {"clean": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.4648437140276656}, "real_noise_10db": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.375, "mean_acoustic_margin": 2.873046869819518}, "real_office_rir": {"n": 32, "accuracy": 0.9375, "semantic_follow": 0.28125, "mean_acoustic_margin": 2.9999999832361937}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.84375, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.0624999866704457}, "rir_plus_noise": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 2.873046911903657}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.78125, "semantic_follow": 0.375, "mean_acoustic_margin": 2.072265624650754}}}
+ROBUST decision_adapter_layer25 20260905 clean
+ROBUST decision_adapter_layer25 20260905 real_noise_10db
+ROBUST decision_adapter_layer25 20260905 real_office_rir
+ROBUST decision_adapter_layer25 20260905 g711_mulaw_8khz
+ROBUST decision_adapter_layer25 20260905 rir_plus_noise
+ROBUST decision_adapter_layer25 20260905 combined_rir_noise_g711
+RESULT {"method": "decision_adapter_layer25", "seed": 20260905, "seconds": 4.966552019119263, "conditions": {"clean": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.212890616210643}, "real_noise_10db": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.34375, "mean_acoustic_margin": 2.98242190486053}, "real_office_rir": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.28125, "mean_acoustic_margin": 3.011718748486601}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.0507812732248567}, "rir_plus_noise": {"n": 32, "accuracy": 0.84375, "semantic_follow": 0.3125, "mean_acoustic_margin": 2.787109382916242}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.34375, "mean_acoustic_margin": 2.124999995226972}}}
+ROBUST full_sequence_adapter_layer22 20260903 clean
+ROBUST full_sequence_adapter_layer22 20260903 real_noise_10db
+ROBUST full_sequence_adapter_layer22 20260903 real_office_rir
+ROBUST full_sequence_adapter_layer22 20260903 g711_mulaw_8khz
+ROBUST full_sequence_adapter_layer22 20260903 rir_plus_noise
+ROBUST full_sequence_adapter_layer22 20260903 combined_rir_noise_g711
+RESULT {"method": "full_sequence_adapter_layer22", "seed": 20260903, "seconds": 4.94527268409729, "conditions": {"clean": {"n": 32, "accuracy": 0.9375, "semantic_follow": 0.25, "mean_acoustic_margin": 3.2402343807043508}, "real_noise_10db": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.34375, "mean_acoustic_margin": 2.8769531106518116}, "real_office_rir": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.25, "mean_acoustic_margin": 2.562499991268851}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.28125, "mean_acoustic_margin": 2.945312528638169}, "rir_plus_noise": {"n": 32, "accuracy": 0.84375, "semantic_follow": 0.3125, "mean_acoustic_margin": 2.3339843878056854}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.65625, "semantic_follow": 0.3125, "mean_acoustic_margin": 1.5664062064606696}}}
+ROBUST full_sequence_adapter_layer22 20260904 clean
+ROBUST full_sequence_adapter_layer22 20260904 real_noise_10db
+ROBUST full_sequence_adapter_layer22 20260904 real_office_rir
+ROBUST full_sequence_adapter_layer22 20260904 g711_mulaw_8khz
+ROBUST full_sequence_adapter_layer22 20260904 rir_plus_noise
+ROBUST full_sequence_adapter_layer22 20260904 combined_rir_noise_g711
+RESULT {"method": "full_sequence_adapter_layer22", "seed": 20260904, "seconds": 4.967644453048706, "conditions": {"clean": {"n": 32, "accuracy": 0.84375, "semantic_follow": 0.34375, "mean_acoustic_margin": 2.5351562405121513}, "real_noise_10db": {"n": 32, "accuracy": 0.75, "semantic_follow": 0.375, "mean_acoustic_margin": 1.9121093703288352}, "real_office_rir": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.3125, "mean_acoustic_margin": 2.246093758032657}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.78125, "semantic_follow": 0.40625, "mean_acoustic_margin": 1.919921890279511}, "rir_plus_noise": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.3125, "mean_acoustic_margin": 1.699218772992026}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.6875, "semantic_follow": 0.40625, "mean_acoustic_margin": 1.1230468684225343}}}
+ROBUST full_sequence_adapter_layer22 20260905 clean
+ROBUST full_sequence_adapter_layer22 20260905 real_noise_10db
+ROBUST full_sequence_adapter_layer22 20260905 real_office_rir
+ROBUST full_sequence_adapter_layer22 20260905 g711_mulaw_8khz
+ROBUST full_sequence_adapter_layer22 20260905 rir_plus_noise
+ROBUST full_sequence_adapter_layer22 20260905 combined_rir_noise_g711
+RESULT {"method": "full_sequence_adapter_layer22", "seed": 20260905, "seconds": 5.12024450302124, "conditions": {"clean": {"n": 32, "accuracy": 0.84375, "semantic_follow": 0.28125, "mean_acoustic_margin": 3.7089843866124284}, "real_noise_10db": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.34375, "mean_acoustic_margin": 2.9199218520516297}, "real_office_rir": {"n": 32, "accuracy": 0.75, "semantic_follow": 0.21875, "mean_acoustic_margin": 3.2949218791909516}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.5429687540163286}, "rir_plus_noise": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.3125, "mean_acoustic_margin": 2.8183594130678102}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.3125, "mean_acoustic_margin": 2.236328138387762}}}
+ROBUST ordinary_lora_layer22 20260903 clean
+ROBUST ordinary_lora_layer22 20260903 real_noise_10db
+ROBUST ordinary_lora_layer22 20260903 real_office_rir
+ROBUST ordinary_lora_layer22 20260903 g711_mulaw_8khz
+ROBUST ordinary_lora_layer22 20260903 rir_plus_noise
+ROBUST ordinary_lora_layer22 20260903 combined_rir_noise_g711
+RESULT {"method": "ordinary_lora_layer22", "seed": 20260903, "seconds": 4.999161958694458, "conditions": {"clean": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 5.740234388242186}, "real_noise_10db": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 5.203125012533178}, "real_office_rir": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.0625, "mean_acoustic_margin": 5.22656255695108}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.96875, "semantic_follow": 0.28125, "mean_acoustic_margin": 5.990234361844017}, "rir_plus_noise": {"n": 32, "accuracy": 0.78125, "semantic_follow": 0.1875, "mean_acoustic_margin": 4.533203103624771}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.1875, "mean_acoustic_margin": 3.550781232283043}}}
+ROBUST ordinary_lora_layer22 20260904 clean
+ROBUST ordinary_lora_layer22 20260904 real_noise_10db
+ROBUST ordinary_lora_layer22 20260904 real_office_rir
+ROBUST ordinary_lora_layer22 20260904 g711_mulaw_8khz
+ROBUST ordinary_lora_layer22 20260904 rir_plus_noise
+ROBUST ordinary_lora_layer22 20260904 combined_rir_noise_g711
+RESULT {"method": "ordinary_lora_layer22", "seed": 20260904, "seconds": 5.422462463378906, "conditions": {"clean": {"n": 32, "accuracy": 0.96875, "semantic_follow": 0.25, "mean_acoustic_margin": 5.193359392781645}, "real_noise_10db": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 4.201171877958814}, "real_office_rir": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.28125, "mean_acoustic_margin": 4.322265646680535}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 4.62695312709161}, "rir_plus_noise": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.3125, "mean_acoustic_margin": 3.611328121158749}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.34375, "mean_acoustic_margin": 2.898437506344635}}}
+ROBUST ordinary_lora_layer22 20260905 clean
+ROBUST ordinary_lora_layer22 20260905 real_noise_10db
+ROBUST ordinary_lora_layer22 20260905 real_office_rir
+ROBUST ordinary_lora_layer22 20260905 g711_mulaw_8khz
+ROBUST ordinary_lora_layer22 20260905 rir_plus_noise
+ROBUST ordinary_lora_layer22 20260905 combined_rir_noise_g711
+RESULT {"method": "ordinary_lora_layer22", "seed": 20260905, "seconds": 5.0256805419921875, "conditions": {"clean": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 5.312499965534386}, "real_noise_10db": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.34375, "mean_acoustic_margin": 4.072265616038408}, "real_office_rir": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.28125, "mean_acoustic_margin": 4.49414062401911}, "g711_mulaw_8khz": {"n": 32, "accuracy": 0.90625, "semantic_follow": 0.3125, "mean_acoustic_margin": 4.6503905953973685}, "rir_plus_noise": {"n": 32, "accuracy": 0.875, "semantic_follow": 0.34375, "mean_acoustic_margin": 3.3261718777055194}, "combined_rir_noise_g711": {"n": 32, "accuracy": 0.8125, "semantic_follow": 0.375, "mean_acoustic_margin": 2.310546849090315}}}
+                       method               condition  runs  accuracy_mean  accuracy_std  clean_delta_mean  semantic_follow_mean  margin_mean
+                     baseline                   clean     1       0.437500      0.000000          0.000000              0.343750     0.880859
+                     baseline combined_rir_noise_g711     1       0.375000      0.000000         -0.062500              0.375000    -0.039062
+                     baseline         g711_mulaw_8khz     1       0.500000      0.000000          0.062500              0.343750     1.099609
+                     baseline         real_noise_10db     1       0.562500      0.000000          0.125000              0.375000     0.839844
+                     baseline         real_office_rir     1       0.281250      0.000000         -0.156250              0.250000     0.265625
+                     baseline          rir_plus_noise     1       0.312500      0.000000         -0.125000              0.281250     0.169922
+     decision_adapter_layer25                   clean     3       0.916667      0.018042          0.000000              0.312500     3.382812
+     decision_adapter_layer25 combined_rir_noise_g711     3       0.802083      0.018042         -0.114583              0.322917     2.152344
+     decision_adapter_layer25         g711_mulaw_8khz     3       0.875000      0.031250         -0.041667              0.312500     3.137370
+     decision_adapter_layer25         real_noise_10db     3       0.875000      0.062500         -0.041667              0.343750     3.052734
+     decision_adapter_layer25         real_office_rir     3       0.864583      0.078644         -0.052083              0.250000     2.992188
+     decision_adapter_layer25          rir_plus_noise     3       0.854167      0.047735         -0.062500              0.281250     2.871745
+full_sequence_adapter_layer22                   clean     3       0.875000      0.054127          0.000000              0.291667     3.161458
+full_sequence_adapter_layer22 combined_rir_noise_g711     3       0.718750      0.082680         -0.156250              0.343750     1.641927
+full_sequence_adapter_layer22         g711_mulaw_8khz     3       0.833333      0.065052         -0.041667              0.333333     2.802734
+full_sequence_adapter_layer22         real_noise_10db     3       0.812500      0.062500         -0.062500              0.354167     2.569661
+full_sequence_adapter_layer22         real_office_rir     3       0.812500      0.062500         -0.062500              0.260417     2.701172
+full_sequence_adapter_layer22          rir_plus_noise     3       0.822917      0.018042         -0.052083              0.312500     2.283854
+        ordinary_lora_layer22                   clean     3       0.927083      0.036084          0.000000              0.291667     5.415365
+        ordinary_lora_layer22 combined_rir_noise_g711     3       0.833333      0.036084         -0.093750              0.302083     2.919922
+        ordinary_lora_layer22         g711_mulaw_8khz     3       0.927083      0.036084          0.000000              0.302083     5.089193
+        ordinary_lora_layer22         real_noise_10db     3       0.895833      0.018042         -0.031250              0.322917     4.492188
+        ordinary_lora_layer22         real_office_rir     3       0.875000      0.054127         -0.052083              0.208333     4.680990
+        ordinary_lora_layer22          rir_plus_noise     3       0.843750      0.054127         -0.083333              0.281250     3.823568
+REALISTIC_ROBUSTNESS_DONE

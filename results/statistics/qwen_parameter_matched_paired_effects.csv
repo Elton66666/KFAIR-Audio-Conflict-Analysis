@@ -1,0 +1,13 @@
+method,seed,split,delta_accuracy,improved,harmed,mcnemar_exact_p
+full_sequence_adapter_layer22,20260903,emis_zero_shot,0.015625,7,4,0.548828125
+full_sequence_adapter_layer22,20260903,test,0.28125,11,2,0.0224609375
+full_sequence_adapter_layer22,20260904,emis_zero_shot,0.01041666666666663,5,3,0.7265625
+full_sequence_adapter_layer22,20260904,test,0.21875,9,2,0.0654296875
+full_sequence_adapter_layer22,20260905,emis_zero_shot,0.005208333333333315,7,6,1.0
+full_sequence_adapter_layer22,20260905,test,0.28125,10,1,0.01171875
+ordinary_lora_layer22,20260903,emis_zero_shot,0.015625,5,2,0.453125
+ordinary_lora_layer22,20260903,test,0.21875,7,0,0.015625
+ordinary_lora_layer22,20260904,emis_zero_shot,0.020833333333333315,7,3,0.34375
+ordinary_lora_layer22,20260904,test,0.25,8,0,0.0078125
+ordinary_lora_layer22,20260905,emis_zero_shot,0.015625,5,2,0.453125
+ordinary_lora_layer22,20260905,test,0.21875,8,1,0.0390625

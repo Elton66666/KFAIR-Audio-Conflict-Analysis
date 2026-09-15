@@ -28,7 +28,8 @@
 9. `reports/实践导向第一二轮结果_2026-09-04.md`
 10. `reports/实践导向第三轮结果_2026-09-04.md`
 11. `reports/KFAIR_本次工作总报告_三项优先工作与实践验证.md`
-12. `reports/投稿前高优先级补实验结果_2026-09-16.md` (latest six-fold actor CV and Qwen2.5-Omni replication)
+12. `reports/投稿前高优先级补实验结果_2026-09-16.md` (six-fold actor CV and initial Qwen2.5-Omni replication)
+13. `reports/LOW_PRIORITY_THREE_EXPERIMENTS_ZH.md` (latest parameter-matched Qwen control, realistic perturbations, and expanded ASR preservation)
 
 The later total reports supersede status statements in earlier reports. Earlier reports remain important for reconstructing decisions and failed assumptions.
 
@@ -48,3 +49,6 @@ The later total reports supersede status statements in earlier reports. Earlier 
 - Capability preservation and robustness: `stage3_*`
 - Six-fold held-out-actor CV: `actor_cv6_*`
 - Qwen2.5-Omni cross-model replication: `qwen_behavioral_*`, `qwen_adapter_*`, `qwen_replication_*`
+- Parameter-matched Qwen control: `qwen_parameter_matched_*`
+- Realistic SLR28/G.711 robustness: `realistic_robustness_*`
+- Expanded 384-utterance ASR preservation: `expanded_asr_preservation_*`

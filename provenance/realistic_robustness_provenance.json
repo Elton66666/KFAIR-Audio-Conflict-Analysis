@@ -1,0 +1,16 @@
+{
+  "source": "OpenSLR SLR28",
+  "archive_md5": "e6f48e257286e05de56413b4779d8ffb",
+  "noise": "RVB2014_type1_noise_smallroom1_1.wav",
+  "rir": "air_type1_air_binaural_office_0_1.wav",
+  "noise_snr_db": 10,
+  "conditions": [
+    "clean",
+    "real_noise_10db",
+    "real_office_rir",
+    "g711_mulaw_8khz",
+    "rir_plus_noise",
+    "combined_rir_noise_g711"
+  ],
+  "generated_files": 160
+}
