@@ -1,0 +1,38 @@
+{
+  "source": "EMIS official Zenodo record 19207001",
+  "paper": "arXiv:2510.25054",
+  "archive": "audios_EMIS.zip",
+  "archive_bytes": 318538812,
+  "archive_md5": "a78a40ce73eae28dabafc1d16ec703bc",
+  "text_csv": "text_samples_EMIS.csv",
+  "text_csv_md5": "84a37ca7ae97859c809e50938b3b4b6f",
+  "license": "GPL-3.0-or-later (Zenodo metadata)",
+  "total": 1248,
+  "conflict": 936,
+  "aligned": 312,
+  "generators": {
+    "COSY": 416,
+    "F5TTS": 416,
+    "STYLE": 416
+  },
+  "semantic_labels": {
+    "neutral": 312,
+    "happy": 312,
+    "sad": 312,
+    "angry": 312
+  },
+  "acoustic_labels": {
+    "neutral": 312,
+    "happy": 312,
+    "sad": 312,
+    "angry": 312
+  },
+  "text_ids": 26,
+  "voice_ids": 10,
+  "repair_checkpoint_rule": "actor_cv6 fold6, fixed before external EMIS evaluation",
+  "seeds": [
+    20260903,
+    20260904,
+    20260905
+  ]
+}

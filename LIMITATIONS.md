@@ -3,7 +3,7 @@
 1. **One primary model family.** The complete intervention-and-repair chain is currently demonstrated on Kimi-Audio. Second-model replication remains undone.
 2. **Controlled conflict construction.** Much of the strongest evidence comes from factorial swapping or synthetic semantic–prosodic conflict, not natural conversational sarcasm.
 3. **Dataset exposure categories are imperfect.** E/U/P reduce but do not eliminate contamination concerns. U is based on public disclosure, not proof of absence from pretraining.
-4. **EMIS is synthetic and modest in size.** The zero-shot repair gain is directional; confidence intervals overlap.
+4. **EMIS is synthetic and is the only full external conflict corpus evaluated.** All 1,248 official samples are now included, and paired gains are consistent, but the absolute zero-shot repair improvement remains modest and does not establish natural-recording generalization.
 5. **Small speaker coverage.** RAVDESS held-out tests use actors 21–24. The sampled TESS evaluation contains only two speakers.
 6. **ASR preservation is narrow.** The current 0-WER result covers two short fixed English sentences and cannot establish open-vocabulary preservation.
 7. **Noise test is limited.** Only additive white Gaussian noise at two SNRs was tested. Real noise, reverberation, devices, codecs, and far-field speech remain untested.
@@ -12,4 +12,3 @@
 10. **Mechanistic labels are shorthand.** The discrete stream is semantic-dominant and the continuous stream acoustic-rich; neither is a pure semantic/acoustic variable.
 
 These limitations should appear explicitly in any draft paper rather than being hidden.
-

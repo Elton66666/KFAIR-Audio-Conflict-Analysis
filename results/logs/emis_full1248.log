@@ -1,0 +1,191 @@
+2026-09-16 13:13:20.135 | INFO     | kimia_infer.api.kimia:__init__:15 - Loading kimi-audio main model
+2026-09-16 13:13:20.135 | INFO     | kimia_infer.api.kimia:__init__:24 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-16 13:13:20.135 | INFO     | kimia_infer.api.kimia:__init__:25 - Loading whisper model
+`torch_dtype` is deprecated! Use `dtype` instead!
+using normal flash attention
+Loading checkpoint shards:   0%|          | 0/36 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 36/36 [00:00<00:00, 791.76it/s]
+2026-09-16 13:13:23.934 | INFO     | kimia_infer.api.prompt_manager:__init__:20 - Looking for resources in /root/autodl-tmp/kfair/models/Kimi-Audio-7B-Instruct
+2026-09-16 13:13:23.934 | INFO     | kimia_infer.api.prompt_manager:__init__:21 - Loading whisper model
+2026-09-16 13:13:27.387 | INFO     | kimia_infer.api.prompt_manager:__init__:30 - Loading text tokenizer
+CACHE 104/1248
+CACHE 208/1248
+CACHE 312/1248
+CACHE 416/1248
+CACHE 520/1248
+CACHE 624/1248
+CACHE 728/1248
+CACHE 832/1248
+CACHE 936/1248
+CACHE 1040/1248
+CACHE 1144/1248
+CACHE 1248/1248
+EMIS branch_full 0 104/1248
+EMIS branch_full 0 208/1248
+EMIS branch_full 0 312/1248
+EMIS branch_full 0 416/1248
+EMIS branch_full 0 520/1248
+EMIS branch_full 0 624/1248
+EMIS branch_full 0 728/1248
+EMIS branch_full 0 832/1248
+EMIS branch_full 0 936/1248
+EMIS branch_full 0 1040/1248
+EMIS branch_full 0 1144/1248
+EMIS branch_full 0 1248/1248
+RESULT {"system": "branch_full", "seed": 0, "branch_mode": "full", "n": 1248, "seconds": 34.56537127494812, "all_accuracy": 0.5224358974358975, "conflict_acoustic_follow": 0.4358974358974359, "conflict_semantic_follow": 0.3717948717948718, "aligned_accuracy": 0.782051282051282}
+EMIS branch_no_continuous 0 104/1248
+EMIS branch_no_continuous 0 208/1248
+EMIS branch_no_continuous 0 312/1248
+EMIS branch_no_continuous 0 416/1248
+EMIS branch_no_continuous 0 520/1248
+EMIS branch_no_continuous 0 624/1248
+EMIS branch_no_continuous 0 728/1248
+EMIS branch_no_continuous 0 832/1248
+EMIS branch_no_continuous 0 936/1248
+EMIS branch_no_continuous 0 1040/1248
+EMIS branch_no_continuous 0 1144/1248
+EMIS branch_no_continuous 0 1248/1248
+RESULT {"system": "branch_no_continuous", "seed": 0, "branch_mode": "no_continuous", "n": 1248, "seconds": 34.341392278671265, "all_accuracy": 0.3157051282051282, "conflict_acoustic_follow": 0.2553418803418803, "conflict_semantic_follow": 0.37606837606837606, "aligned_accuracy": 0.4967948717948718}
+EMIS branch_no_discrete 0 104/1248
+EMIS branch_no_discrete 0 208/1248
+EMIS branch_no_discrete 0 312/1248
+EMIS branch_no_discrete 0 416/1248
+EMIS branch_no_discrete 0 520/1248
+EMIS branch_no_discrete 0 624/1248
+EMIS branch_no_discrete 0 728/1248
+EMIS branch_no_discrete 0 832/1248
+EMIS branch_no_discrete 0 936/1248
+EMIS branch_no_discrete 0 1040/1248
+EMIS branch_no_discrete 0 1144/1248
+EMIS branch_no_discrete 0 1248/1248
+RESULT {"system": "branch_no_discrete", "seed": 0, "branch_mode": "no_discrete", "n": 1248, "seconds": 35.00275659561157, "all_accuracy": 0.4983974358974359, "conflict_acoustic_follow": 0.4017094017094017, "conflict_semantic_follow": 0.42094017094017094, "aligned_accuracy": 0.7884615384615384}
+EMIS branch_rolled_continuous 0 104/1248
+EMIS branch_rolled_continuous 0 208/1248
+EMIS branch_rolled_continuous 0 312/1248
+EMIS branch_rolled_continuous 0 416/1248
+EMIS branch_rolled_continuous 0 520/1248
+EMIS branch_rolled_continuous 0 624/1248
+EMIS branch_rolled_continuous 0 728/1248
+EMIS branch_rolled_continuous 0 832/1248
+EMIS branch_rolled_continuous 0 936/1248
+EMIS branch_rolled_continuous 0 1040/1248
+EMIS branch_rolled_continuous 0 1144/1248
+EMIS branch_rolled_continuous 0 1248/1248
+RESULT {"system": "branch_rolled_continuous", "seed": 0, "branch_mode": "rolled_continuous", "n": 1248, "seconds": 35.33971047401428, "all_accuracy": 0.43189102564102566, "conflict_acoustic_follow": 0.3247863247863248, "conflict_semantic_follow": 0.4797008547008547, "aligned_accuracy": 0.7532051282051282}
+EMIS decision_adapter_layer25 20260903 104/1248
+EMIS decision_adapter_layer25 20260903 208/1248
+EMIS decision_adapter_layer25 20260903 312/1248
+EMIS decision_adapter_layer25 20260903 416/1248
+EMIS decision_adapter_layer25 20260903 520/1248
+EMIS decision_adapter_layer25 20260903 624/1248
+EMIS decision_adapter_layer25 20260903 728/1248
+EMIS decision_adapter_layer25 20260903 832/1248
+EMIS decision_adapter_layer25 20260903 936/1248
+EMIS decision_adapter_layer25 20260903 1040/1248
+EMIS decision_adapter_layer25 20260903 1144/1248
+EMIS decision_adapter_layer25 20260903 1248/1248
+RESULT {"system": "decision_adapter_layer25", "seed": 20260903, "branch_mode": "full", "n": 1248, "seconds": 35.40384817123413, "all_accuracy": 0.5697115384615384, "conflict_acoustic_follow": 0.49252136752136755, "conflict_semantic_follow": 0.3333333333333333, "aligned_accuracy": 0.8012820512820513}
+EMIS decision_adapter_layer25 20260904 104/1248
+EMIS decision_adapter_layer25 20260904 208/1248
+EMIS decision_adapter_layer25 20260904 312/1248
+EMIS decision_adapter_layer25 20260904 416/1248
+EMIS decision_adapter_layer25 20260904 520/1248
+EMIS decision_adapter_layer25 20260904 624/1248
+EMIS decision_adapter_layer25 20260904 728/1248
+EMIS decision_adapter_layer25 20260904 832/1248
+EMIS decision_adapter_layer25 20260904 936/1248
+EMIS decision_adapter_layer25 20260904 1040/1248
+EMIS decision_adapter_layer25 20260904 1144/1248
+EMIS decision_adapter_layer25 20260904 1248/1248
+RESULT {"system": "decision_adapter_layer25", "seed": 20260904, "branch_mode": "full", "n": 1248, "seconds": 35.416051387786865, "all_accuracy": 0.5849358974358975, "conflict_acoustic_follow": 0.5042735042735043, "conflict_semantic_follow": 0.3333333333333333, "aligned_accuracy": 0.8269230769230769}
+EMIS decision_adapter_layer25 20260905 104/1248
+EMIS decision_adapter_layer25 20260905 208/1248
+EMIS decision_adapter_layer25 20260905 312/1248
+EMIS decision_adapter_layer25 20260905 416/1248
+EMIS decision_adapter_layer25 20260905 520/1248
+EMIS decision_adapter_layer25 20260905 624/1248
+EMIS decision_adapter_layer25 20260905 728/1248
+EMIS decision_adapter_layer25 20260905 832/1248
+EMIS decision_adapter_layer25 20260905 936/1248
+EMIS decision_adapter_layer25 20260905 1040/1248
+EMIS decision_adapter_layer25 20260905 1144/1248
+EMIS decision_adapter_layer25 20260905 1248/1248
+RESULT {"system": "decision_adapter_layer25", "seed": 20260905, "branch_mode": "full", "n": 1248, "seconds": 35.23681712150574, "all_accuracy": 0.561698717948718, "conflict_acoustic_follow": 0.4775641025641026, "conflict_semantic_follow": 0.35683760683760685, "aligned_accuracy": 0.8141025641025641}
+EMIS full_sequence_adapter_layer22 20260903 104/1248
+EMIS full_sequence_adapter_layer22 20260903 208/1248
+EMIS full_sequence_adapter_layer22 20260903 312/1248
+EMIS full_sequence_adapter_layer22 20260903 416/1248
+EMIS full_sequence_adapter_layer22 20260903 520/1248
+EMIS full_sequence_adapter_layer22 20260903 624/1248
+EMIS full_sequence_adapter_layer22 20260903 728/1248
+EMIS full_sequence_adapter_layer22 20260903 832/1248
+EMIS full_sequence_adapter_layer22 20260903 936/1248
+EMIS full_sequence_adapter_layer22 20260903 1040/1248
+EMIS full_sequence_adapter_layer22 20260903 1144/1248
+EMIS full_sequence_adapter_layer22 20260903 1248/1248
+RESULT {"system": "full_sequence_adapter_layer22", "seed": 20260903, "branch_mode": "full", "n": 1248, "seconds": 34.76034426689148, "all_accuracy": 0.5536858974358975, "conflict_acoustic_follow": 0.4668803418803419, "conflict_semantic_follow": 0.3717948717948718, "aligned_accuracy": 0.8141025641025641}
+EMIS full_sequence_adapter_layer22 20260904 104/1248
+EMIS full_sequence_adapter_layer22 20260904 208/1248
+EMIS full_sequence_adapter_layer22 20260904 312/1248
+EMIS full_sequence_adapter_layer22 20260904 416/1248
+EMIS full_sequence_adapter_layer22 20260904 520/1248
+EMIS full_sequence_adapter_layer22 20260904 624/1248
+EMIS full_sequence_adapter_layer22 20260904 728/1248
+EMIS full_sequence_adapter_layer22 20260904 832/1248
+EMIS full_sequence_adapter_layer22 20260904 936/1248
+EMIS full_sequence_adapter_layer22 20260904 1040/1248
+EMIS full_sequence_adapter_layer22 20260904 1144/1248
+EMIS full_sequence_adapter_layer22 20260904 1248/1248
+RESULT {"system": "full_sequence_adapter_layer22", "seed": 20260904, "branch_mode": "full", "n": 1248, "seconds": 34.286789894104004, "all_accuracy": 0.563301282051282, "conflict_acoustic_follow": 0.48183760683760685, "conflict_semantic_follow": 0.36324786324786323, "aligned_accuracy": 0.8076923076923077}
+EMIS full_sequence_adapter_layer22 20260905 104/1248
+EMIS full_sequence_adapter_layer22 20260905 208/1248
+EMIS full_sequence_adapter_layer22 20260905 312/1248
+EMIS full_sequence_adapter_layer22 20260905 416/1248
+EMIS full_sequence_adapter_layer22 20260905 520/1248
+EMIS full_sequence_adapter_layer22 20260905 624/1248
+EMIS full_sequence_adapter_layer22 20260905 728/1248
+EMIS full_sequence_adapter_layer22 20260905 832/1248
+EMIS full_sequence_adapter_layer22 20260905 936/1248
+EMIS full_sequence_adapter_layer22 20260905 1040/1248
+EMIS full_sequence_adapter_layer22 20260905 1144/1248
+EMIS full_sequence_adapter_layer22 20260905 1248/1248
+RESULT {"system": "full_sequence_adapter_layer22", "seed": 20260905, "branch_mode": "full", "n": 1248, "seconds": 35.59026074409485, "all_accuracy": 0.5408653846153846, "conflict_acoustic_follow": 0.46153846153846156, "conflict_semantic_follow": 0.34935897435897434, "aligned_accuracy": 0.7788461538461539}
+EMIS ordinary_lora_layer22 20260903 104/1248
+EMIS ordinary_lora_layer22 20260903 208/1248
+EMIS ordinary_lora_layer22 20260903 312/1248
+EMIS ordinary_lora_layer22 20260903 416/1248
+EMIS ordinary_lora_layer22 20260903 520/1248
+EMIS ordinary_lora_layer22 20260903 624/1248
+EMIS ordinary_lora_layer22 20260903 728/1248
+EMIS ordinary_lora_layer22 20260903 832/1248
+EMIS ordinary_lora_layer22 20260903 936/1248
+EMIS ordinary_lora_layer22 20260903 1040/1248
+EMIS ordinary_lora_layer22 20260903 1144/1248
+EMIS ordinary_lora_layer22 20260903 1248/1248
+RESULT {"system": "ordinary_lora_layer22", "seed": 20260903, "branch_mode": "full", "n": 1248, "seconds": 35.35778737068176, "all_accuracy": 0.5641025641025641, "conflict_acoustic_follow": 0.4700854700854701, "conflict_semantic_follow": 0.375, "aligned_accuracy": 0.8461538461538461}
+EMIS ordinary_lora_layer22 20260904 104/1248
+EMIS ordinary_lora_layer22 20260904 208/1248
+EMIS ordinary_lora_layer22 20260904 312/1248
+EMIS ordinary_lora_layer22 20260904 416/1248
+EMIS ordinary_lora_layer22 20260904 520/1248
+EMIS ordinary_lora_layer22 20260904 624/1248
+EMIS ordinary_lora_layer22 20260904 728/1248
+EMIS ordinary_lora_layer22 20260904 832/1248
+EMIS ordinary_lora_layer22 20260904 936/1248
+EMIS ordinary_lora_layer22 20260904 1040/1248
+EMIS ordinary_lora_layer22 20260904 1144/1248
+EMIS ordinary_lora_layer22 20260904 1248/1248
+RESULT {"system": "ordinary_lora_layer22", "seed": 20260904, "branch_mode": "full", "n": 1248, "seconds": 34.92391562461853, "all_accuracy": 0.5697115384615384, "conflict_acoustic_follow": 0.4775641025641026, "conflict_semantic_follow": 0.375, "aligned_accuracy": 0.8461538461538461}
+EMIS ordinary_lora_layer22 20260905 104/1248
+EMIS ordinary_lora_layer22 20260905 208/1248
+EMIS ordinary_lora_layer22 20260905 312/1248
+EMIS ordinary_lora_layer22 20260905 416/1248
+EMIS ordinary_lora_layer22 20260905 520/1248
+EMIS ordinary_lora_layer22 20260905 624/1248
+EMIS ordinary_lora_layer22 20260905 728/1248
+EMIS ordinary_lora_layer22 20260905 832/1248
+EMIS ordinary_lora_layer22 20260905 936/1248
+EMIS ordinary_lora_layer22 20260905 1040/1248
+EMIS ordinary_lora_layer22 20260905 1144/1248
+EMIS ordinary_lora_layer22 20260905 1248/1248
+RESULT {"system": "ordinary_lora_layer22", "seed": 20260905, "branch_mode": "full", "n": 1248, "seconds": 35.01009011268616, "all_accuracy": 0.5801282051282052, "conflict_acoustic_follow": 0.4861111111111111, "conflict_semantic_follow": 0.36752136752136755, "aligned_accuracy": 0.8621794871794872}
+EMIS_FULL1248_DONE

@@ -1,0 +1,226 @@
+{
+  "rows": 16224,
+  "unique_keys": 16224,
+  "audio_files": 1248,
+  "systems": 13,
+  "empty_predictions": 0,
+  "all_repair_conflict_mcnemar_p_below_0_05": true,
+  "aggregate": [
+    {
+      "system": "branch_full",
+      "runs": 1,
+      "by_seed": [
+        {
+          "seed": 0,
+          "overall_accuracy": 0.5224358974358975,
+          "conflict_acoustic_follow": 0.4358974358974359,
+          "conflict_semantic_follow": 0.3717948717948718,
+          "aligned_accuracy": 0.782051282051282,
+          "conflict_margin": 0.1839610005218464
+        }
+      ],
+      "overall_accuracy_mean": 0.5224358974358975,
+      "overall_accuracy_std": 0.0,
+      "conflict_acoustic_follow_mean": 0.4358974358974359,
+      "conflict_acoustic_follow_std": 0.0,
+      "conflict_semantic_follow_mean": 0.3717948717948718,
+      "conflict_semantic_follow_std": 0.0,
+      "aligned_accuracy_mean": 0.782051282051282,
+      "aligned_accuracy_std": 0.0,
+      "conflict_margin_mean": 0.1839610005218464,
+      "conflict_margin_std": 0.0
+    },
+    {
+      "system": "branch_no_continuous",
+      "runs": 1,
+      "by_seed": [
+        {
+          "seed": 0,
+          "overall_accuracy": 0.3157051282051282,
+          "conflict_acoustic_follow": 0.2553418803418803,
+          "conflict_semantic_follow": 0.37606837606837606,
+          "aligned_accuracy": 0.4967948717948718,
+          "conflict_margin": -0.2257612135866259
+        }
+      ],
+      "overall_accuracy_mean": 0.3157051282051282,
+      "overall_accuracy_std": 0.0,
+      "conflict_acoustic_follow_mean": 0.2553418803418803,
+      "conflict_acoustic_follow_std": 0.0,
+      "conflict_semantic_follow_mean": 0.37606837606837606,
+      "conflict_semantic_follow_std": 0.0,
+      "aligned_accuracy_mean": 0.4967948717948718,
+      "aligned_accuracy_std": 0.0,
+      "conflict_margin_mean": -0.2257612135866259,
+      "conflict_margin_std": 0.0
+    },
+    {
+      "system": "branch_no_discrete",
+      "runs": 1,
+      "by_seed": [
+        {
+          "seed": 0,
+          "overall_accuracy": 0.4983974358974359,
+          "conflict_acoustic_follow": 0.4017094017094017,
+          "conflict_semantic_follow": 0.42094017094017094,
+          "aligned_accuracy": 0.7884615384615384,
+          "conflict_margin": -0.02457265450214195
+        }
+      ],
+      "overall_accuracy_mean": 0.4983974358974359,
+      "overall_accuracy_std": 0.0,
+      "conflict_acoustic_follow_mean": 0.4017094017094017,
+      "conflict_acoustic_follow_std": 0.0,
+      "conflict_semantic_follow_mean": 0.42094017094017094,
+      "conflict_semantic_follow_std": 0.0,
+      "aligned_accuracy_mean": 0.7884615384615384,
+      "aligned_accuracy_std": 0.0,
+      "conflict_margin_mean": -0.02457265450214195,
+      "conflict_margin_std": 0.0
+    },
+    {
+      "system": "branch_rolled_continuous",
+      "runs": 1,
+      "by_seed": [
+        {
+          "seed": 0,
+          "overall_accuracy": 0.43189102564102566,
+          "conflict_acoustic_follow": 0.3247863247863248,
+          "conflict_semantic_follow": 0.4797008547008547,
+          "aligned_accuracy": 0.7532051282051282,
+          "conflict_margin": -0.7839209375630379
+        }
+      ],
+      "overall_accuracy_mean": 0.43189102564102566,
+      "overall_accuracy_std": 0.0,
+      "conflict_acoustic_follow_mean": 0.3247863247863248,
+      "conflict_acoustic_follow_std": 0.0,
+      "conflict_semantic_follow_mean": 0.4797008547008547,
+      "conflict_semantic_follow_std": 0.0,
+      "aligned_accuracy_mean": 0.7532051282051282,
+      "aligned_accuracy_std": 0.0,
+      "conflict_margin_mean": -0.7839209375630379,
+      "conflict_margin_std": 0.0
+    },
+    {
+      "system": "decision_adapter_layer25",
+      "runs": 3,
+      "by_seed": [
+        {
+          "seed": 20260903,
+          "overall_accuracy": 0.5697115384615384,
+          "conflict_acoustic_follow": 0.49252136752136755,
+          "conflict_semantic_follow": 0.3333333333333333,
+          "aligned_accuracy": 0.8012820512820513,
+          "conflict_margin": 0.7066639926526834
+        },
+        {
+          "seed": 20260904,
+          "overall_accuracy": 0.5849358974358975,
+          "conflict_acoustic_follow": 0.5042735042735043,
+          "conflict_semantic_follow": 0.3333333333333333,
+          "aligned_accuracy": 0.8269230769230769,
+          "conflict_margin": 0.8691239363009421
+        },
+        {
+          "seed": 20260905,
+          "overall_accuracy": 0.561698717948718,
+          "conflict_acoustic_follow": 0.4775641025641026,
+          "conflict_semantic_follow": 0.35683760683760685,
+          "aligned_accuracy": 0.8141025641025641,
+          "conflict_margin": 0.6402243608439692
+        }
+      ],
+      "overall_accuracy_mean": 0.5721153846153846,
+      "overall_accuracy_std": 0.01180362168482072,
+      "conflict_acoustic_follow_mean": 0.4914529914529915,
+      "conflict_acoustic_follow_std": 0.013386713767245352,
+      "conflict_semantic_follow_mean": 0.34116809116809116,
+      "conflict_semantic_follow_std": 0.013570198634798913,
+      "aligned_accuracy_mean": 0.8141025641025642,
+      "aligned_accuracy_std": 0.012820512820512775,
+      "conflict_margin_mean": 0.738670763265865,
+      "conflict_margin_std": 0.1177585620450132
+    },
+    {
+      "system": "full_sequence_adapter_layer22",
+      "runs": 3,
+      "by_seed": [
+        {
+          "seed": 20260903,
+          "overall_accuracy": 0.5536858974358975,
+          "conflict_acoustic_follow": 0.4668803418803419,
+          "conflict_semantic_follow": 0.3717948717948718,
+          "aligned_accuracy": 0.8141025641025641,
+          "conflict_margin": 0.4698851483806363
+        },
+        {
+          "seed": 20260904,
+          "overall_accuracy": 0.563301282051282,
+          "conflict_acoustic_follow": 0.48183760683760685,
+          "conflict_semantic_follow": 0.36324786324786323,
+          "aligned_accuracy": 0.8076923076923077,
+          "conflict_margin": 0.5522836552550777
+        },
+        {
+          "seed": 20260905,
+          "overall_accuracy": 0.5408653846153846,
+          "conflict_acoustic_follow": 0.46153846153846156,
+          "conflict_semantic_follow": 0.34935897435897434,
+          "aligned_accuracy": 0.7788461538461539,
+          "conflict_margin": 0.597889963147538
+        }
+      ],
+      "overall_accuracy_mean": 0.5526175213675214,
+      "overall_accuracy_std": 0.011256040334244398,
+      "conflict_acoustic_follow_mean": 0.47008547008547,
+      "conflict_acoustic_follow_std": 0.010522283976277884,
+      "conflict_semantic_follow_mean": 0.3614672364672365,
+      "conflict_semantic_follow_std": 0.011323442375772555,
+      "aligned_accuracy_mean": 0.8002136752136751,
+      "aligned_accuracy_std": 0.01878033742654588,
+      "conflict_margin_mean": 0.5400195889277506,
+      "conflict_margin_std": 0.06487768216450099
+    },
+    {
+      "system": "ordinary_lora_layer22",
+      "runs": 3,
+      "by_seed": [
+        {
+          "seed": 20260903,
+          "overall_accuracy": 0.5641025641025641,
+          "conflict_acoustic_follow": 0.4700854700854701,
+          "conflict_semantic_follow": 0.375,
+          "aligned_accuracy": 0.8461538461538461,
+          "conflict_margin": 0.7863915511792056
+        },
+        {
+          "seed": 20260904,
+          "overall_accuracy": 0.5697115384615384,
+          "conflict_acoustic_follow": 0.4775641025641026,
+          "conflict_semantic_follow": 0.375,
+          "aligned_accuracy": 0.8461538461538461,
+          "conflict_margin": 0.9698851466386352
+        },
+        {
+          "seed": 20260905,
+          "overall_accuracy": 0.5801282051282052,
+          "conflict_acoustic_follow": 0.4861111111111111,
+          "conflict_semantic_follow": 0.36752136752136755,
+          "aligned_accuracy": 0.8621794871794872,
+          "conflict_margin": 0.9202056693302283
+        }
+      ],
+      "overall_accuracy_mean": 0.5713141025641026,
+      "overall_accuracy_std": 0.008132124651516233,
+      "conflict_acoustic_follow_mean": 0.4779202279202279,
+      "conflict_acoustic_follow_std": 0.008018753738744801,
+      "conflict_semantic_follow_mean": 0.37250712250712253,
+      "conflict_semantic_follow_std": 0.004317790474708725,
+      "aligned_accuracy_mean": 0.8514957264957266,
+      "aligned_accuracy_std": 0.009252408160090188,
+      "conflict_margin_mean": 0.8921607890493565,
+      "conflict_margin_std": 0.09490711973362977
+    }
+  ]
+}

@@ -21,7 +21,7 @@ For Claude Code or another coding agent: read [`CLAUDE.md`](CLAUDE.md) first and
 - A 57,344-parameter layer-25 decision-token adapter reaches 90.63% SER.
 - A 57,344-parameter layer-22 full-sequence adapter reaches 91.67% SER and 92.71% acoustic following on conflict cells.
 - An equal-parameter ordinary LoRA reaches 88.02% SER; it is weaker on clean conflict accuracy but more stable under additive white noise.
-- RAVDESS-trained repair transfers directionally to the post-model-release EMIS subset: conflict acoustic following rises from 33.33% to 44.44%, although confidence intervals overlap.
+- On all 1,248 post-model-release EMIS samples, the Kimi baseline follows acoustic emotion on 43.59% of 936 conflict cases. RAVDESS-trained decision adapters reach 49.15% ± 1.34% across three seeds; all three paired conflict comparisons are significant, while the modest absolute gain still leaves substantial cross-domain headroom.
 - On the current 32-utterance short-sentence ASR preservation check, all compared methods retain 0 WER.
 
 These numbers are specific to the documented controlled tasks. They must not be presented as general real-world accuracy.
@@ -35,4 +35,3 @@ Not redistributed: Kimi-Audio model weights, Python virtual environments/caches,
 ## Repository status
 
 This is a research snapshot intended for advisor review and paper drafting, not a final camera-ready release. See [`LIMITATIONS.md`](LIMITATIONS.md) before writing strong claims.
-

@@ -30,6 +30,7 @@
 11. `reports/KFAIR_本次工作总报告_三项优先工作与实践验证.md`
 12. `reports/投稿前高优先级补实验结果_2026-09-16.md` (six-fold actor CV and initial Qwen2.5-Omni replication)
 13. `reports/LOW_PRIORITY_THREE_EXPERIMENTS_ZH.md` (latest parameter-matched Qwen control, realistic perturbations, and expanded ASR preservation)
+14. `reports/EMIS_FULL1248_ZH.md` (full 1,248-sample time-out evaluation and external repair transfer)
 
 The later total reports supersede status statements in earlier reports. Earlier reports remain important for reconstructing decisions and failed assumptions.
 
@@ -42,7 +43,7 @@ The later total reports supersede status statements in earlier reports. Earlier 
 - Base/Instruct: `kfair_base_*`, `tess_base_*`
 - Layer tracing: `kfair_layer_trace_*`, `kfair_base_layer_trace_*`
 - Causal patching: `kfair_activation_patching*`, `kfair_decision_token_patching*`
-- EMIS/P: `emis_temporal_holdout*`, `adapter_emis_zeroshot*`
+- EMIS/P: legacy balanced-subset results `emis_temporal_holdout*`, `adapter_emis_zeroshot*`; final full-corpus results `emis_full1248_*`
 - Repair prototype: `heldout_actor_adapter*`
 - Repair sweep and ablations: `adapter_sweep*`
 - Practical baselines and efficiency: `practical_baselines*`, `efficiency_benchmark*`
