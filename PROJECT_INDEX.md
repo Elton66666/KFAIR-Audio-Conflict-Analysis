@@ -31,8 +31,9 @@
 12. `reports/投稿前高优先级补实验结果_2026-09-16.md` (six-fold actor CV and initial Qwen2.5-Omni replication)
 13. `reports/LOW_PRIORITY_THREE_EXPERIMENTS_ZH.md` (latest parameter-matched Qwen control, realistic perturbations, and expanded ASR preservation)
 14. `reports/EMIS_FULL1248_ZH.md` (full 1,248-sample time-out evaluation and external repair transfer)
+15. `reports/POST_REVIEW_COMPLETE_SUPPLEMENT_ZH.md` (single exhaustive post-review master report; start here when updating the paper, with the three detailed source reports preserved in full)
 
-The later total reports supersede status statements in earlier reports. Earlier reports remain important for reconstructing decisions and failed assumptions.
+For paper revision after the external review, start with report 15. The later total reports supersede status statements in earlier reports. Earlier reports remain important for reconstructing decisions and failed assumptions.
 
 ## Result families
 
